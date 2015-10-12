@@ -1,3 +1,11 @@
+html {
+	background-image: url(http://fotonin.com/data_images/out/4/772194-coffee-wallpapers.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 nav a {
 	font-size: 1em;
 	position: relative !important;
