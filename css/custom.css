@@ -1,0 +1,49 @@
+nav a {
+	font-size: 1em;
+	position: relative !important;
+	display: inline-block !important;
+	color: #fff !important;
+	text-transform: capitalize;
+}
+
+nav a:hover, nav a:focus {
+	text-decoration: none;
+}
+
+.navbar {
+	min-height:20px !important;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:0px !important;
+    padding-bottom:0 !important;
+    height: 20px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+}
+
+.navbar-brand {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 30px;
+}
+
+.nav-custom {
+	background: #500000;
+	border-bottom: 3px solid #daa520;
+}
+
+.cl-effect-13 a:hover, .cl-effect-13 a:focus {
+    color: #ba7700 !important;
+}
+
+.cl-effect-13 a::before {
+	top: 75%;
+}
