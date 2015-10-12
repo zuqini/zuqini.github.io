@@ -11,13 +11,13 @@ nav a:hover, nav a:focus {
 }
 
 .navbar {
-	min-height:20px !important;
+	min-height:30px !important;
 }
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:0px !important;
+    padding-top:5px !important;
     padding-bottom:0 !important;
-    height: 20px;
+    height: 30px;
 }
 
 .nav>li>a {
@@ -28,7 +28,7 @@ nav a:hover, nav a:focus {
 
 .navbar-brand {
     font-size: 1em;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
