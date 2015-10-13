@@ -1,13 +1,10 @@
-html {
+body {
 	/*background-image: url(http://fotonin.com/data_images/out/4/772194-coffee-wallpapers.jpg);*/
 	background-color: #2a2a2a;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-
-body {
 	font-family: 'Lato', sans-serif;
 }
 
@@ -63,4 +60,11 @@ nav a:hover, nav a:focus {
 
 .cl-effect-13 a::before {
 	top: 75%;
+}
+
+.svg-container {
+	margin-top: 75px;
+	margin-left: 0;
+	width: 50%;
+	height: 50%;
 }
