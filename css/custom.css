@@ -1,13 +1,18 @@
 html {
-	background-image: url(http://fotonin.com/data_images/out/4/772194-coffee-wallpapers.jpg);
+	/*background-image: url(http://fotonin.com/data_images/out/4/772194-coffee-wallpapers.jpg);*/
+	background-color: #2a2a2a;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
+body {
+	font-family: 'Lato', sans-serif;
+}
+
 nav a {
-	font-size: 1em;
+	font-size: 1.2em;
 	position: relative !important;
 	display: inline-block !important;
 	color: #fff !important;
@@ -35,17 +40,21 @@ nav a:hover, nav a:focus {
 }
 
 .navbar-brand {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 30px;
+    margin-left: 70px;
+}
+
+.navbar-right {
+    margin-right: 60px;
 }
 
 .nav-custom {
-	background: #500000;
-	border-bottom: 3px solid #daa520;
+	background: #2a2a2a;
+	border-bottom: 3px;
 }
 
 .cl-effect-13 a:hover, .cl-effect-13 a:focus {

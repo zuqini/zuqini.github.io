@@ -556,7 +556,7 @@ nav a:focus {
 	color: transparent;
 	content: '•';
 	text-shadow: 0 0 transparent;
-	font-size: 1.2em;
+	font-size: 1em;
 	-webkit-transition: text-shadow 0.3s, color 0.3s;
 	-moz-transition: text-shadow 0.3s, color 0.3s;
 	transition: text-shadow 0.3s, color 0.3s;
