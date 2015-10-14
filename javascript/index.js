@@ -38,6 +38,6 @@ $( document ).ready(function() {
 		}
 		codeResult += "Welcome! ";
 		document.getElementById('type-result').innerHTML = codeResult;
-		setTimeout(typeResult, 60);
+		setTimeout(typeResult, 10);
 	}
 });
