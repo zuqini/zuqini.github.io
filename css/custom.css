@@ -36,18 +36,6 @@ nav a:hover, nav a:focus {
     padding: 10px 0px;
 }
 
-.navbar-brand {
-    margin-top: 10px;
-}
-
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 70px;
-}
-
-.navbar-right {
-    margin-right: 60px;
-}
-
 .nav-custom {
 	background: #2a2a2a;
 	border-bottom: 3px;
@@ -63,7 +51,6 @@ nav a:hover, nav a:focus {
 
 .svg-container {
 	margin-top: 75px;
-	margin-left: 20px;
-	width: 60%;
-	height: 60%;
+	width: 40%;
+	height: 40%;
 }
