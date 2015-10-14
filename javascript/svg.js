@@ -1,3 +1,3 @@
 $( document ).ready(function() {
-	window.draw = new Vivus('hi-svg', {type: 'oneByOne'});
+	window.draw = new Vivus('welcome-svg', {type: 'oneByOne'});
 });
