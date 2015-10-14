@@ -22,6 +22,7 @@ nav a:hover, nav a:focus {
 
 .navbar {
 	min-height:30px !important;
+	margin-bottom: 100px;
 }
 
 .navbar-nav > li > a, .navbar-brand {
@@ -49,8 +50,8 @@ nav a:hover, nav a:focus {
 	top: 75%;
 }
 
-.svg-container {
-	margin-top: 75px;
-	width: 40%;
-	height: 40%;
+.home-desc {
+	height: 4em;
+	font-size: 2em;
+	color: #ffffff
 }
