@@ -29,7 +29,7 @@ $( document ).ready(function() {
 	    if( char === '>' ) isTag = false;
 
 	    if (isTag) return typeCode();
-	    setTimeout(typeCode, 60);
+	    setTimeout(typeCode, 20);
 	}
 
 	function typeResult() {

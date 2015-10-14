@@ -66,10 +66,10 @@ nav a:hover, nav a:focus {
 }
 
 #type-code {
-	color: #00ff00;
+	font-family: monospace;
 }
 
 #type-result {
-	color: #00ff00;
 	word-wrap: break-word;
+	font-family: monospace;
 }
