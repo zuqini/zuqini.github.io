@@ -6,6 +6,7 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: 'Lato', sans-serif;
+	color: #ffffff;
 }
 
 nav a {
@@ -22,7 +23,11 @@ nav a:hover, nav a:focus {
 
 .navbar {
 	min-height:30px !important;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
+	padding-bottom: 5px;
+	border-bottom: 3px;
+	border-color: #3f3f3f;
+	border-style: solid;
 }
 
 .navbar-nav > li > a, .navbar-brand {
@@ -39,7 +44,6 @@ nav a:hover, nav a:focus {
 
 .nav-custom {
 	background: #2a2a2a;
-	border-bottom: 3px;
 }
 
 .cl-effect-13 a:hover, .cl-effect-13 a:focus {
@@ -54,4 +58,18 @@ nav a:hover, nav a:focus {
 	height: 4em;
 	font-size: 2em;
 	color: #ffffff
+}
+
+.center-code {
+	line-height: 70%;
+
+}
+
+#type-code {
+	color: #00ff00;
+}
+
+#type-result {
+	color: #00ff00;
+	word-wrap: break-word;
 }
