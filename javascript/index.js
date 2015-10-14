@@ -8,7 +8,7 @@ $( document ).ready(function() {
 	);
 
 	//Type some code
-	var code = "<p>(welcome() {</p><p style='text-indent:50px;'>for (int i = 15; i > 0; i--) {</p><p style='text-indent:100px;'>print(\"Welcome!  \");</p><p style='text-indent:50px;'>}</p><p>}());</p>";
+	var code = "<p>(welcome() {</p><p style='text-indent:50px;'>for (int i = 21; i > 0; i--) {</p><p style='text-indent:100px;'>print(\"Welcome!  \");</p><p style='text-indent:50px;'>}</p><p>}());</p>";
     var i = 0;
     var j = 0;
     var isTag;
@@ -33,7 +33,7 @@ $( document ).ready(function() {
 	}
 
 	function typeResult() {
-		if(j++ == 15) {
+		if(j++ == 21) {
 			return;
 		}
 		codeResult += "Welcome! ";
