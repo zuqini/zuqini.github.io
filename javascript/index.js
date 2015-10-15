@@ -30,7 +30,7 @@ $( document ).ready(function() {
 	);
 
 	//Type some code
-	var code = "function run() {" + '\n' + "    while (!message.equals(mystery)) {" + '\n' + "        message.scramble();" + '\n' + "        print(message);" + '\n' + "    }" + '\n' + "}" + '\n' + '\n' + "run();";
+	var code = "function run() {" + '\n' + "   while (!message.equals(mystery)) {" + '\n' + "      message.scramble();" + '\n' + "      print(message);" + '\n' + "   }" + '\n' + "}" + '\n' + '\n' + "run();";
     var i = 0;
     var isTag;
     var codeToType;
