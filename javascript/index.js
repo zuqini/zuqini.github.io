@@ -30,7 +30,7 @@ $( document ).ready(function() {
 	);
 
 	//Type some code
-	var code = "function run() {" + '\n' + '\t' + "while (!message.equals(mystery)) {" + '\n' + '\t' + '\t' + "message.scramble();" + '\n' + '\t' + '\t' + "print(message);" + '\n' + '\t' + "}" + '\n' + "}" + '\n' + '\n' + "run();";
+	var code = "function run() {" + '\n' + "    while (!message.equals(mystery)) {" + '\n' + "        message.scramble();" + '\n' + "        print(message);" + '\n' + "    }" + '\n' + "}" + '\n' + '\n' + "run();";
     var i = 0;
     var isTag;
     var codeToType;
@@ -50,7 +50,7 @@ $( document ).ready(function() {
 	    if( char === '>' ) isTag = false;
 
 	    if (isTag) return typeCode();
-	    setTimeout(typeCode, 40);
+	    setTimeout(typeCode, 30);
 	}
 
 	//shuffling
@@ -58,7 +58,7 @@ $( document ).ready(function() {
 	var str = target.shuffle();
 
 	var count = 0;
-	var maxCount = 200;
+	var maxCount = 150;
 
 	function handleCode() {
 		$('#console-window').html(codeToType);

@@ -94,7 +94,5 @@ nav a:hover, nav a:focus {
 
 #code-result {
 	word-wrap: break-word;
-	font-size: 30px;
-	font-family: monospace;
-	color: #ba7700;
+	font-size: 35px;
 }
