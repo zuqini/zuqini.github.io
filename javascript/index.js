@@ -25,6 +25,7 @@ $( document ).ready(function() {
 			$('#mini-title').addClass('animated fadeInUp');
 			$('#console-window').addClass('animated fadeInUp');
 			$('.image-links').addClass('animated fadeInUp');
+			$('.trans-grow').addClass('grow');
 			typeCode();
 		}
 	);
@@ -54,7 +55,7 @@ $( document ).ready(function() {
 	}
 
 	//shuffling
-	var target = "Welcome to my website!";
+	var target = "Thanks for checking out my website!";
 	var str = target.shuffle();
 
 	var count = 0;
