@@ -13,18 +13,24 @@ String.prototype.shuffle = function () {
 
 $( document ).ready(function() {
 	$('#mini-title').hide();
+	$('#console-window').hide();
+	$('.image-links').hide();
 	new Vivus('welcome-svg', {
 			file: 'resources/zuqi.svg',
 			type: 'oneByOne'
 		}, function(vivus) {
 			$('#mini-title').show();
+			$('#console-window').show();
+			$('.image-links').show();
 			$('#mini-title').addClass('animated fadeInUp');
+			$('#console-window').addClass('animated fadeInUp');
+			$('.image-links').addClass('animated fadeInUp');
 			typeCode();
 		}
 	);
 
 	//Type some code
-	var code = "<p>(function run() {</p><p style='text-indent:50px;'>while (!message.equals(mystery)) {</p><p style='text-indent:100px;'>message.scramble();</p><p style='text-indent:100px;'>print(message);</p><p style='text-indent:50px;'>}</p><p>}());</p>";
+	var code = "function run() {" + '\n' + '\t' + "while (!message.equals(mystery)) {" + '\n' + '\t' + '\t' + "message.scramble();" + '\n' + '\t' + '\t' + "print(message);" + '\n' + '\t' + "}" + '\n' + "}" + '\n' + '\n' + "run();";
     var i = 0;
     var isTag;
     var codeToType;
@@ -32,12 +38,12 @@ $( document ).ready(function() {
 	function typeCode() {
 	    codeToType = code.slice(0, ++i);
 	    if (codeToType === code) {
-	    	document.getElementById('type-code').innerHTML = codeToType + '_';
+	    	$('#console-window').html(codeToType + '_');
 	    	setTimeout(handleCode, 500);
 	    	return;
 	    }
 	    
-	    document.getElementById('type-code').innerHTML = codeToType + '_';
+	    $('#console-window').html(codeToType + '_');
 
 	    var char = codeToType.slice(-1);
 	    if( char === '<' ) isTag = true;
@@ -55,7 +61,7 @@ $( document ).ready(function() {
 	var maxCount = 200;
 
 	function handleCode() {
-		document.getElementById('type-code').innerHTML = codeToType;
+		$('#console-window').html(codeToType);
 		scrambleWord();
 	}
 

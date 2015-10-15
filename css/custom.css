@@ -60,8 +60,31 @@ nav a:hover, nav a:focus {
 	color: #ffffff
 }
 
-.center-code {
-	line-height: 70%;
+.image-links {
+	padding-left: 0px;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	display: block;
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+.image-links>li {
+	display: inline;
+	margin-right: 10%;
+}
+
+.console-container {
+	margin-bottom: 30px;
+}
+
+#console-window {
+	color: #1ec503;
+	background-color: #000000;
+	font-family: monospace;
+	font-size: 14px;
 }
 
 #mini-title {
@@ -69,17 +92,9 @@ nav a:hover, nav a:focus {
 	padding-left: 0px;
 }
 
-#type-code {
-	padding-top: 55px;
-	padding-left: 45px;
-	color: #ba7700;
-	/*font-family: monospace;*/
-}
-
 #code-result {
-	padding-left: 45px;
 	word-wrap: break-word;
-	font-size: 40px;
-	word-spacing: 2;
-	color: #abcdef;
+	font-size: 30px;
+	font-family: monospace;
+	color: #ba7700;
 }
