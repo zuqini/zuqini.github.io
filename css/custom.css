@@ -72,7 +72,8 @@ nav a:hover, nav a:focus {
 #type-code {
 	padding-top: 55px;
 	padding-left: 45px;
-	font-family: monospace;
+	color: #ba7700;
+	/*font-family: monospace;*/
 }
 
 #code-result {
@@ -80,5 +81,5 @@ nav a:hover, nav a:focus {
 	word-wrap: break-word;
 	font-size: 40px;
 	word-spacing: 2;
-	color: #ba7700;
+	color: #abcdef;
 }

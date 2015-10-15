@@ -52,7 +52,7 @@ $( document ).ready(function() {
 	var str = target.shuffle();
 
 	var count = 0;
-	var maxCount = 300;
+	var maxCount = 200;
 
 	function handleCode() {
 		document.getElementById('type-code').innerHTML = codeToType;
