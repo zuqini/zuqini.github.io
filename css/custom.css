@@ -70,12 +70,12 @@ nav a:hover, nav a:focus {
 }
 
 .image-links>li>a>img {
-	height:5vh;
-	width:5vh;
+	height:50px;
+	width:50px;
 }
 
 .svg-container {
-	width: 40%;
+	width: 50%;
 }
 
 #console-window {
@@ -85,7 +85,7 @@ nav a:hover, nav a:focus {
 }
 
 #mini-title {
-	font-size: 1.5vw;
+	font-size: 25px;
 	padding-left: 0px;
 }
 
