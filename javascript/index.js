@@ -12,54 +12,32 @@ String.prototype.shuffle = function () {
 }
 
 $( document ).ready(function() {
+	//Type some code
+	var code = "(function run() {" + '\n' + "   while (message != mystery)) {" + '\n' + "      message.scramble();" + '\n' + "      print(message);" + '\n' + "   }" + '\n' + "}());";
+	var codeIndex = 0;
+	var isTag;
+	var codeToType;
+
+	//shuffling
+	var target = "Thanks for checking out my website!";
+	var str = target.shuffle();
+	var count = 0;
+	var maxCount = 150;
+
 	$('#mini-title').hide();
 	$('#console-window').hide();
 	$('.image-links').hide();
-	new Vivus('welcome-svg', {
-			file: 'resources/zuqi.svg',
-			type: 'oneByOne'
-		}, function(vivus) {
-			$('#mini-title').show();
-			$('#console-window').show();
-			$('.image-links').show();
-			$('#mini-title').addClass('animated fadeInUp');
-			$('#console-window').addClass('animated fadeInUp');
-			$('.image-links').addClass('animated fadeInUp');
-			$('.trans-grow').addClass('grow');
-			typeCode();
-		}
-	);
-
-	//Type some code
-	var code = "(function run() {" + '\n' + "   while (message != mystery)) {" + '\n' + "      message.scramble();" + '\n' + "      print(message);" + '\n' + "   }" + '\n' + "}());";
-    var i = 0;
-    var isTag;
-    var codeToType;
 
 	function typeCode() {
-	    codeToType = code.slice(0, ++i);
+	    codeToType = code.slice(0, ++codeIndex);
 	    if (codeToType === code) {
 	    	$('#console-window').html(codeToType + '_');
 	    	setTimeout(handleCode, 500);
 	    	return;
 	    }
-	    
 	    $('#console-window').html(codeToType + '_');
-
-	    var char = codeToType.slice(-1);
-	    if( char === '<' ) isTag = true;
-	    if( char === '>' ) isTag = false;
-
-	    if (isTag) return typeCode();
 	    setTimeout(typeCode, 30);
 	}
-
-	//shuffling
-	var target = "Thanks for checking out my website!";
-	var str = target.shuffle();
-
-	var count = 0;
-	var maxCount = 150;
 
 	function handleCode() {
 		$('#console-window').html(codeToType);
@@ -75,4 +53,19 @@ $( document ).ready(function() {
 	    }
 		setTimeout(scrambleWord, 20);
 	};
+
+	new Vivus('welcome-svg', {
+			file: 'resources/zuqi.svg',
+			type: 'oneByOne'
+		}, function(vivus) {
+			$('#mini-title').show();
+			$('#console-window').show();
+			$('.image-links').show();
+			$('#mini-title').addClass('animated fadeInUp');
+			$('#console-window').addClass('animated fadeInUp');
+			$('.image-links').addClass('animated fadeInUp');
+			$('.trans-grow').addClass('grow');
+			typeCode();
+		}
+	);
 });

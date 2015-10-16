@@ -54,15 +54,8 @@ nav a:hover, nav a:focus {
 	top: 75%;
 }
 
-.home-desc {
-	height: 4em;
-	font-size: 2em;
-	color: #ffffff
-}
-
 .image-links {
 	padding-left: 0px;
-	margin-bottom: 50px;
 	margin-top: 30px;
 	display: block;
 	list-style: none;
@@ -76,13 +69,13 @@ nav a:hover, nav a:focus {
 	margin-right: 20px;
 }
 
-.svg-container {
-	width: 60%;
-	height: 60%;
+.image-links>li>a>img {
+	height:5vh;
+	width:5vh;
 }
 
-.console-container {
-	margin-bottom: 30px;
+.svg-container {
+	width: 40%;
 }
 
 #console-window {
@@ -92,7 +85,7 @@ nav a:hover, nav a:focus {
 }
 
 #mini-title {
-	font-size: 25px;
+	font-size: 1.5vw;
 	padding-left: 0px;
 }
 
@@ -112,8 +105,9 @@ hr {
     border-color: #3f3f3f;
 } 
 
-.bottom-space {
-	margin-bottom: 40px;
+.divider {
+	margin-bottom: 5vh;
+	margin-top: 10vh;
 }
 
 .trans-grow {
@@ -124,4 +118,8 @@ hr {
 
 .grow{
     width:100%;
+}
+
+.no-overflow {
+	overflow:hidden;
 }
