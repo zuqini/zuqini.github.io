@@ -41,14 +41,15 @@ $( document ).ready(function() {
 
 	function handleCode() {
 		$('#console-window').html(codeToType);
+		$('#code-result').addClass('animated zoomIn');
 		scrambleWord();
 	}
 
 	function scrambleWord() {
 	 	str = str.shuffle();
-		document.getElementById('code-result').innerHTML = str;
+		$('#code-result').html(str);
 		if(str == target || count++ === maxCount) {
-	        document.getElementById('code-result').innerHTML = target;
+	        $('#code-result').html(target);
 	        return;
 	    }
 		setTimeout(scrambleWord, 20);
@@ -62,7 +63,7 @@ $( document ).ready(function() {
 			$('#console-window').show();
 			$('.image-links').show();
 			$('#mini-title').addClass('animated fadeInUp');
-			$('#console-window').addClass('animated fadeInUp');
+			$('#console-window').addClass('animated zoomIn');
 			$('.image-links').addClass('animated fadeInUp');
 			$('.trans-grow').addClass('grow');
 			typeCode();
