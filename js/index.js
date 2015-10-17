@@ -12,21 +12,21 @@ String.prototype.shuffle = function () {
 }
 
 $( document ).ready(function() {
-	//Type some code
+	$('#mini-title').hide();
+	$('#console-window').hide();
+	$('.image-links').hide();
+
+	//console-box variables
 	var code = "(function run() {" + '\n' + "   while (message != mystery)) {" + '\n' + "      message.scramble();" + '\n' + "      print(message);" + '\n' + "   }" + '\n' + "}());";
 	var codeIndex = 0;
 	var isTag;
 	var codeToType;
 
-	//shuffling
-	var target = "Thanks for checking out my website!";
+	//shuffling variables
+	var target = "Thanks for checking out my website! ;-)";
 	var str = target.shuffle();
 	var count = 0;
 	var maxCount = 150;
-
-	$('#mini-title').hide();
-	$('#console-window').hide();
-	$('.image-links').hide();
 
 	function typeCode() {
 	    codeToType = code.slice(0, ++codeIndex);
@@ -66,6 +66,7 @@ $( document ).ready(function() {
 			$('#console-window').addClass('animated zoomIn');
 			$('.image-links').addClass('animated fadeInUp');
 			$('.trans-grow').addClass('grow');
+			$(window).scrollTop($(window).scrollTop());
 			typeCode();
 		}
 	);

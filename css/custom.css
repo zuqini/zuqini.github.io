@@ -1,4 +1,4 @@
-body {
+html, body {
 	/*background-image: url(http://fotonin.com/data_images/out/4/772194-coffee-wallpapers.jpg);*/
 	background-color: #2a2a2a;
 	-webkit-background-size: cover;
@@ -7,6 +7,7 @@ body {
 	background-size: cover;
 	font-family: 'Lato', sans-serif;
 	color: #ffffff;
+	height: 101%
 }
 
 nav a {
@@ -23,17 +24,25 @@ nav a:hover, nav a:focus {
 
 .navbar {
 	min-height:30px !important;
-	margin-bottom: 50px;
-	padding-bottom: 5px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 	border-bottom: 3px;
 	border-color: #3f3f3f;
 	border-style: solid;
 }
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:5px !important;
+    padding-top:3px !important;
     padding-bottom:0 !important;
     height: 30px;
+}
+
+.navbar-brand {
+	padding-top: 7px !important;
+}
+
+button {
+	margin-bottom: 15px !important;
 }
 
 .nav>li>a {
@@ -56,7 +65,6 @@ nav a:hover, nav a:focus {
 
 .image-links {
 	padding-left: 0px;
-	margin-top: 30px;
 	display: block;
 	list-style: none;
 	list-style-image: none;
@@ -75,39 +83,41 @@ nav a:hover, nav a:focus {
 }
 
 .svg-container {
-	width: 50%;
+	width: 250px;
 }
 
 #console-window {
 	color: #1ec503;
 	background-color: #000000;
 	font-family: monospace;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 12px;
 }
 
 #mini-title {
-	font-size: 25px;
+	font-size: 20px;
 	padding-left: 0px;
+	margin-bottom: 20px;
 }
 
 #code-result {
-	word-wrap: break-word;
 	font-size: 30px;
 }
 
 hr {
     display: block;
-    margin-top: 0.5em;
+    margin-top: 0em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
     border-width: 2px;
-    border-color: #3f3f3f;
+    border-color: #2a2a2a;
 } 
 
 .divider {
 	margin-bottom: 5vh;
-	margin-top: 10vh;
 }
 
 .trans-grow {
@@ -117,9 +127,22 @@ hr {
 }
 
 .grow{
-    width:100%;
+	border-color: #3f3f3f;
+	width:100%;
 }
 
 .no-overflow {
 	overflow:hidden;
+}
+
+#background-view {
+	padding-top: 50px;
+	/*background-image: url(http://tombaileymusic.com/wp-content/uploads/2014/04/first-guitar_danielygo_ncnd3.jpg);*/
+	height: 370px;
+	width: 100%;
+	border: 0px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
