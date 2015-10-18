@@ -66,6 +66,7 @@ $( document ).ready(function() {
 			$('#console-window').addClass('animated zoomIn');
 			$('.image-links').addClass('animated fadeInUp');
 			$('.trans-grow').addClass('grow');
+			$('.background-overlay').addClass('background-show');
 			$(window).scrollTop($(window).scrollTop());
 			typeCode();
 		}

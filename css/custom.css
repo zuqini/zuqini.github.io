@@ -90,7 +90,6 @@ button {
 	color: #1ec503;
 	background-color: #000000;
 	font-family: monospace;
-	margin-top: 10px;
 	margin-bottom: 30px;
 	font-size: 12px;
 }
@@ -117,7 +116,7 @@ hr {
 } 
 
 .divider {
-	margin-bottom: 5vh;
+	margin-bottom: 30px;
 }
 
 .trans-grow {
@@ -136,8 +135,21 @@ hr {
 }
 
 #background-view {
+	background-image: url(http://tombaileymusic.com/wp-content/uploads/2014/04/first-guitar_danielygo_ncnd3.jpg);
+	position: fixed;
+	height:450px;
+	width: 100%;
+}
+
+#foreground-view {
+	position: absolute;
+	height: auto;
+	width: 100%;
+}
+
+.background-overlay {
 	padding-top: 50px;
-	/*background-image: url(http://tombaileymusic.com/wp-content/uploads/2014/04/first-guitar_danielygo_ncnd3.jpg);*/
+	background-color: rgba(42,42,42,1);
 	height: 370px;
 	width: 100%;
 	border: 0px;
@@ -145,4 +157,20 @@ hr {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	-webkit-transition: background-color 1s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s  ease-out;
+}
+
+.background-show{
+	background-color: rgba(42,42,42,0.3);
+}
+
+#post-background {
+	height: auto;
+	width: 100%;
+	border: 0px;
+	background-color: #2a2a2a;
+	opacity: 1;
+	position: absolute;
 }
