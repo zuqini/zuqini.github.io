@@ -141,19 +141,19 @@ hr {
 	-o-background-size: cover;
 	background-size: cover;
 	position: fixed;
-	height:100vh;
+	height:100%;
 	width: 100%;
 }
 
 #foreground-view {
 	position: absolute;
-	height: auto;
+	height: 100%;
 	width: 100%;
 }
 
 .background-overlay {
 	background-color: rgba(42,42,42,1);
-	height: 70vh;
+	height: 70%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -170,7 +170,7 @@ hr {
 }
 
 #post-background {
-	min-height: 30vh;
+	min-height: 30%;
 	height: auto;
 	width: 100%;
 	border: 0px;
