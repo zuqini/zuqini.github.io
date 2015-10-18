@@ -83,6 +83,7 @@ button {
 }
 
 .svg-container {
+	margin-top: 15%;
 	width: 250px;
 }
 
@@ -141,7 +142,7 @@ hr {
 	-o-background-size: cover;
 	background-size: cover;
 	position: fixed;
-	height:450px;
+	height:100vh;
 	width: 100%;
 }
 
@@ -152,9 +153,8 @@ hr {
 }
 
 .background-overlay {
-	padding-top: 50px;
 	background-color: rgba(42,42,42,1);
-	height: 370px;
+	height: 80vh;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -171,6 +171,7 @@ hr {
 }
 
 #post-background {
+	min-height: 100px;
 	height: auto;
 	width: 100%;
 	border: 0px;
