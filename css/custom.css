@@ -116,7 +116,7 @@ hr {
 } 
 
 .divider {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .trans-grow {
@@ -154,7 +154,7 @@ hr {
 .background-overlay {
 	background-color: rgba(42,42,42,1);
 	min-height: 280px;
-	height: 70%;
+	height: 70vh;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -171,7 +171,7 @@ hr {
 }
 
 #post-background {
-	min-height: 30%;
+	min-height: 30vh;
 	height: auto;
 	width: 100%;
 	border: 0px;
