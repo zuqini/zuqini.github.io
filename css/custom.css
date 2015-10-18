@@ -153,6 +153,7 @@ hr {
 
 .background-overlay {
 	background-color: rgba(42,42,42,1);
+	min-height: 280px;
 	height: 70%;
 	width: 100%;
 	border: 0px;
