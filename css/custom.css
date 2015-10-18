@@ -158,8 +158,8 @@ hr {
 	-o-background-size: cover;
 	background-size: cover;
 
-	-webkit-transition: background-color 1s ease-out; /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s  ease-out;
+	-webkit-transition: background-color 5s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: background-color 5s  ease-out;
 }
 
 .background-show{
