@@ -1,5 +1,4 @@
 html, body {
-	/*background-image: url(http://fotonin.com/data_images/out/4/772194-coffee-wallpapers.jpg);*/
 	background-color: #2a2a2a;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -83,7 +82,7 @@ button {
 }
 
 .svg-container {
-	margin-top: 15%;
+	margin-top: 50px;
 	width: 250px;
 }
 
@@ -167,11 +166,11 @@ hr {
 }
 
 .background-show{
-	background-color: rgba(42,42,42,0.3);
+	background-color: rgba(42,42,42,0.7);
 }
 
 #post-background {
-	min-height: 100px;
+	min-height: 20vh;
 	height: auto;
 	width: 100%;
 	border: 0px;
