@@ -147,14 +147,14 @@ hr {
 }
 
 .background-view {
-	background-image: url(http://tombaileymusic.com/wp-content/uploads/2014/04/first-guitar_danielygo_ncnd3.jpg);
+	background-image: url("../resources/bg1.png");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	position: fixed;
 	opacity: 0;
-	height: 100%;
+	height: 90%;
 	width: 100%;
 	-webkit-transition: opacity 5s ease-out; /* For Safari 3.1 to 6.0 */
     transition: opacity 5s  ease-out;
