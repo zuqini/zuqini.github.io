@@ -13,12 +13,16 @@ nav a {
 	font-size: 1.2em;
 	position: relative !important;
 	display: inline-block !important;
-	color: #fff !important;
+	color: #fff;
 	text-transform: capitalize;
 }
 
 nav a:hover, nav a:focus {
 	text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
 }
 
 .navbar {
@@ -54,12 +58,20 @@ button {
 	background: #2a2a2a;
 }
 
-.cl-effect-13 a:hover, .cl-effect-13 a:focus {
+.cl-effect-13 a:hover {
     color: #ba7700 !important;
+}
+
+.cl-effect-13 a:focus {
+	color: #fff !important;
 }
 
 .cl-effect-13 a::before {
 	top: 75%;
+}
+
+#current-page {
+	color: #ba7700;
 }
 
 .image-links {

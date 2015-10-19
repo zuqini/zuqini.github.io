@@ -566,14 +566,12 @@ nav a:focus {
 	pointer-events: none;
 }
 
-.cl-effect-13 a:hover::before,
-.cl-effect-13 a:focus::before {
+.cl-effect-13 a:hover::before {
 	color: #fff;
 	text-shadow: 10px 0 #fff, -10px 0 #fff;
 }
 
-.cl-effect-13 a:hover,
-.cl-effect-13 a:focus {
+.cl-effect-13 a:hover {
 	color: #ba7700;
 }
 
