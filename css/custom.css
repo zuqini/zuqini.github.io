@@ -44,6 +44,8 @@ nav a:hover, nav a:focus {
 
 .navbar-brand {
 	padding-top: 7px !important;
+	width:100px;
+	height:50px;
 }
 
 button {
@@ -84,7 +86,6 @@ button {
 }
 
 .svg-container {
-	margin-top: 20px;
 	width: 250px;
 }
 
@@ -96,7 +97,7 @@ button {
 	font-size: 12px;
 }
 
-#mini-title {
+#sub-title {
 	font-size: 20px;
 	padding-left: 0px;
 	margin-bottom: 20px;
@@ -144,6 +145,7 @@ hr {
 	background-size: cover;
 	position: fixed;
 	opacity: 0;
+	min-height: 350px;
 	height: 70%;
 	width: 100%;
 	-webkit-transition: opacity 5s ease-out; /* For Safari 3.1 to 6.0 */
@@ -160,15 +162,16 @@ hr {
 	width: 100%;
 }
 
-.overlay-padding-top {
+.navbar-placeholder {
 	height: 10%;
+	min-height: 70px;
 	background-color: rgba(42,42,42,0.7);
 }
 
 .overlay {
 	background-color: rgba(42,42,42,0.7);
 	min-height: 280px;
-	height: 50%;
+	height: 55%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -178,9 +181,20 @@ hr {
 }
 
 #post-overlay {
-	height: 40%;
+	height: 35%;
 	width: 100%;
 	border: 0px;
 	background-color: #2a2a2a;
 	opacity: 1;
+}
+
+.title {
+	font-size: 40px;
+	letter-spacing: 0.5px;
+}
+
+.hr-left {
+	margin-left: 0px;
+	-webkit-transition: width 2s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: width 2s  ease-out;
 }

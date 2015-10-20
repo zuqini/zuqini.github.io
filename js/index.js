@@ -12,7 +12,7 @@ String.prototype.shuffle = function () {
 }
 
 $( document ).ready(function() {
-	$('#mini-title').hide();
+	$('#sub-title').hide();
 	$('#console-window').hide();
 	$('.image-links').hide();
 
@@ -59,10 +59,10 @@ $( document ).ready(function() {
 			file: 'resources/zuqi.svg',
 			type: 'oneByOne'
 		}, function(vivus) {
-			$('#mini-title').show();
+			$('#sub-title').show();
 			$('#console-window').show();
 			$('.image-links').show();
-			$('#mini-title').addClass('animated fadeInUp');
+			$('#sub-title').addClass('animated fadeInUp');
 			$('#console-window').addClass('animated zoomIn');
 			$('.image-links').addClass('animated fadeInUp');
 			$('.trans-grow').addClass('grow');
