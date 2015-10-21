@@ -90,7 +90,8 @@ button {
 }
 
 #console-window {
-	color: #1ec503;
+	/*color: #1ec503;*/
+	color: #ffffff;
 	background-color: #000000;
 	font-family: monospace;
 	margin-bottom: 10px;
@@ -165,12 +166,12 @@ hr {
 }
 
 .navbar-placeholder {
-	height: 10%;
-	min-height: 70px;
+	height: 70px;
 	background-color: rgba(42,42,42,0.7);
 }
 
 .overlay {
+	padding-top: 3%;
 	background-color: rgba(42,42,42,0.7);
 	min-height: 280px;
 	height: 50%;
@@ -183,6 +184,7 @@ hr {
 }
 
 #post-overlay {
+	min-height: 35%;
 	height: auto;
 	width: 100%;
 	border: 0px;
@@ -191,6 +193,7 @@ hr {
 }
 
 .title {
+	padding-top: 3%;
 	font-size: 40px;
 	letter-spacing: 0.5px;
 }
