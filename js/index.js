@@ -12,10 +12,6 @@ String.prototype.shuffle = function () {
 }
 
 $( document ).ready(function() {
-	$('#sub-title').hide();
-	$('#console-window').hide();
-	$('.image-links').hide();
-
 	//console-box variables
 	var code = "(function run() {" + '\n' + "   while (message != mystery)) {" + '\n' + "      message.scramble();" + '\n' + "      print(message);" + '\n' + "   }" + '\n' + "}());";
 	var codeIndex = 0;

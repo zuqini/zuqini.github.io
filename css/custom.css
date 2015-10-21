@@ -68,7 +68,7 @@ button {
 
 .image-links {
 	padding-left: 0px;
-	display: block;
+	display: none;
 	list-style: none;
 	list-style-image: none;
 	list-style-type: none;
@@ -95,12 +95,14 @@ button {
 	font-family: monospace;
 	margin-bottom: 10px;
 	font-size: 12px;
+	display: none;
 }
 
 #sub-title {
 	font-size: 20px;
 	padding-left: 0px;
 	margin-bottom: 20px;
+	display: none;
 }
 
 #code-result {
@@ -181,6 +183,7 @@ hr {
 }
 
 #post-overlay {
+	min-height: 160px;
 	height: 35%;
 	width: 100%;
 	border: 0px;

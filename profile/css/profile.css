@@ -1,6 +1,7 @@
 .portrait {
 	width: 300px;
 	height: 300px;
+	display: none;
 }
 
 .divider {
