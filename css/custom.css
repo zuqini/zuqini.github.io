@@ -12,7 +12,6 @@ html, body {
 nav a {
 	font-size: 1.2em;
 	position: relative !important;
-	display: inline-block !important;
 	color: #fff;
 	text-transform: capitalize;
 }
@@ -37,15 +36,15 @@ nav a:hover, nav a:focus {
 }
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:3px !important;
-    padding-bottom:0 !important;
-    height: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    line-height: 30px;
 }
 
 .navbar-brand {
 	padding-top: 7px !important;
 	width:100px;
-	height:50px;
+	height:60px;
 }
 
 button {
@@ -55,7 +54,7 @@ button {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 0px;
+    padding: 15px 15px;
 }
 
 .nav-custom {
@@ -166,12 +165,12 @@ hr {
 }
 
 .navbar-placeholder {
-	height: 70px;
+	min-height: 70px;
+	height: 10%;
 	background-color: rgba(42,42,42,0.7);
 }
 
 .overlay {
-	padding-top: 3%;
 	background-color: rgba(42,42,42,0.7);
 	min-height: 280px;
 	height: 50%;
