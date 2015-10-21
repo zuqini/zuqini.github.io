@@ -173,7 +173,7 @@ hr {
 .overlay {
 	background-color: rgba(42,42,42,0.7);
 	min-height: 280px;
-	height: 55%;
+	height: 50%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -183,8 +183,7 @@ hr {
 }
 
 #post-overlay {
-	min-height: 160px;
-	height: 35%;
+	height: auto;
 	width: 100%;
 	border: 0px;
 	background-color: #2a2a2a;
