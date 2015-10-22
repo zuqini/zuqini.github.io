@@ -775,6 +775,10 @@
 	color: #ba7700;
 }
 
+.btn-6a:focus {
+	color: #fff;
+}
+
 /* Button 6b */
 .btn-6b {
 	border: 4px solid #226fbe;
