@@ -150,9 +150,7 @@ hr {
 	min-height: 350px;
 	height: 70%;
 	width: 100%;
-	-webkit-transition: opacity 5s ease-out;
-	-moz-transition: opacity 5s ease-out;
-	-o-transition: opacity 5s ease-out;
+	-webkit-transition: opacity 5s ease-out; /* For Safari 3.1 to 6.0 */
     transition: opacity 5s  ease-out;
 }
 
