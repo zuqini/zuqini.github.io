@@ -24,7 +24,7 @@ $( document ).ready(function() {
 			console.log(this.position, this.duration, this.load_percent, this.volume());
 		} else {
 			this.play();
-			this.volume(1);
+			this.volume(0.5);
 		}
 		// or simply call this.playPause();
 	}
