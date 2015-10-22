@@ -10,7 +10,7 @@
 }
 
 /* General button style (reset) */
-.btn {
+.cbtn {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
@@ -30,7 +30,7 @@
 	transition: all 0.3s;
 }
 
-.btn:after {
+.cbtn:after {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -40,7 +40,7 @@
 }
 
 /* Pseudo elements for icons */
-.btn:before,
+.cbtn:before,
 .icon-heart:after,
 .icon-star:after,
 .icon-plus:after,
@@ -134,20 +134,20 @@
 }
 
 /* Button 1 */
-.btn-1 {
+.cbtn-1 {
 	border: 3px solid #fff;
 	color: #fff;
 }
 
 /* Button 1a */
-.btn-1a:hover,
-.btn-1a:active {
+.cbtn-1a:hover,
+.cbtn-1a:active {
 	color: #0e83cd;
 	background: #fff;
 }
 
 /* Button 1b */
-.btn-1b:after {
+.cbtn-1b:after {
 	width: 100%;
 	height: 0;
 	top: 0;
@@ -155,18 +155,18 @@
 	background: #fff;
 }
 
-.btn-1b:hover,
-.btn-1b:active {
+.cbtn-1b:hover,
+.cbtn-1b:active {
 	color: #0e83cd;
 }
 
-.btn-1b:hover:after,
-.btn-1b:active:after {
+.cbtn-1b:hover:after,
+.cbtn-1b:active:after {
 	height: 100%;
 }
 
 /* Button 1c */
-.btn-1c:after {
+.cbtn-1c:after {
 	width: 0%;
 	height: 100%;
 	top: 0;
@@ -174,22 +174,22 @@
 	background: #fff;
 }
 
-.btn-1c:hover,
-.btn-1c:active {
+.cbtn-1c:hover,
+.cbtn-1c:active {
 	color: #0e83cd;
 }
 
-.btn-1c:hover:after,
-.btn-1c:active:after {
+.cbtn-1c:hover:after,
+.cbtn-1c:active:after {
 	width: 100%;
 }
 
 /* Button 1d */
-.btn-1d {
+.cbtn-1d {
 	overflow: hidden;
 }
 
-.btn-1d:after {
+.cbtn-1d:after {
 	width: 0;
 	height: 103%;
 	top: 50%;
@@ -202,27 +202,27 @@
 	transform: translateX(-50%) translateY(-50%);
 }
 
-.btn-1d:hover,
-.btn-1d:active {
+.cbtn-1d:hover,
+.cbtn-1d:active {
 	color: #0e83cd;
 }
 
-.btn-1d:hover:after {
+.cbtn-1d:hover:after {
 	width: 90%;
 	opacity: 1;
 }
 
-.btn-1d:active:after {
+.cbtn-1d:active:after {
 	width: 101%;
 	opacity: 1;
 }
 
 /* Button 1e */
-.btn-1e {
+.cbtn-1e {
 	overflow: hidden;
 }
 
-.btn-1e:after {
+.cbtn-1e:after {
 	width: 100%;
 	height: 0;
 	top: 50%;
@@ -235,27 +235,27 @@
 	transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 
-.btn-1e:hover,
-.btn-1e:active {
+.cbtn-1e:hover,
+.cbtn-1e:active {
 	color: #0e83cd;
 }
 
-.btn-1e:hover:after {
+.cbtn-1e:hover:after {
 	height: 260%;
 	opacity: 1;
 }
 
-.btn-1e:active:after {
+.cbtn-1e:active:after {
 	height: 400%;
 	opacity: 1;
 }
 
 /* Button 1f */
-.btn-1f {
+.cbtn-1f {
 	overflow: hidden;
 }
 
-.btn-1f:after {
+.cbtn-1f:after {
 	width: 101%;
 	height: 0;
 	top: 50%;
@@ -268,23 +268,23 @@
 	transform: translateX(-50%) translateY(-50%);
 }
 
-.btn-1f:hover,
-.btn-1f:active {
+.cbtn-1f:hover,
+.cbtn-1f:active {
 	color: #0e83cd;
 }
 
-.btn-1f:hover:after {
+.cbtn-1f:hover:after {
 	height: 75%;
 	opacity: 1;
 }
 
-.btn-1f:active:after {
+.cbtn-1f:active:after {
 	height: 130%;
 	opacity: 1;
 }
 
 /* Button 2 */
-.btn-2 {
+.cbtn-2 {
 	background: #cb4e4e;
 	color: #fff;
 	box-shadow: 0 6px #ab3c3c;
@@ -294,179 +294,179 @@
 }
 
 /* Button 2a */
-.btn-2a {
+.cbtn-2a {
 	border-radius: 0 0 5px 5px;
 }
 
-.btn-2a:hover {
+.cbtn-2a:hover {
 	box-shadow: 0 4px #ab3c3c;
 	top: 2px;
 }
 
-.btn-2a:active {
+.cbtn-2a:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 2b */
-.btn-2b {
+.cbtn-2b {
 	border-radius: 0 0 5px 5px;
 }
 
-.btn-2b:hover {
+.cbtn-2b:hover {
 	box-shadow: 0 8px #ab3c3c;
 	top: -2px;
 }
 
-.btn-2b:active {
+.cbtn-2b:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 2c */
-.btn-2c {
+.cbtn-2c {
 	border-radius: 5px;
 }
 
-.btn-2c:hover {
+.cbtn-2c:hover {
 	box-shadow: 0 4px #ab3c3c;
 	top: 2px;
 }
 
-.btn-2c:active {
+.cbtn-2c:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 2d */
-.btn-2d {
+.cbtn-2d {
 	border-radius: 5px;
 }
 
-.btn-2d:hover {
+.cbtn-2d:hover {
 	box-shadow: 0 8px #ab3c3c;
 	top: -2px;
 }
 
-.btn-2d:active {
+.cbtn-2d:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 2e */
-.btn-2e {
+.cbtn-2e {
 	border-radius: 5px;
 	box-shadow: -6px 0 #ab3c3c;
 }
 
-.btn-2e:hover {
+.cbtn-2e:hover {
 	box-shadow: -4px 0 #ab3c3c;
 	left: -2px;
 }
 
-.btn-2e:active {
+.cbtn-2e:active {
 	box-shadow: 0 0 #ab3c3c;
 	left: -6px;
 }
 
 /* Button 2f */
-.btn-2f {
+.cbtn-2f {
 	border-radius: 5px;
 	box-shadow: 6px 0 #ab3c3c;
 }
 
-.btn-2f:hover {
+.cbtn-2f:hover {
 	box-shadow: 4px 0 #ab3c3c;
 	left: 2px;
 }
 
-.btn-2f:active {
+.cbtn-2f:active {
 	box-shadow: 0 0 #ab3c3c;
 	left: 6px;
 }
 
 /* Button 2g */
-.btn-2g {
+.cbtn-2g {
 	border-radius: 40px;
 }
 
-.btn-2g:hover {
+.cbtn-2g:hover {
 	box-shadow: 0 4px #ab3c3c;
 	top: 2px;
 }
 
-.btn-2g:active {
+.cbtn-2g:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 2h */
-.btn-2h {
+.cbtn-2h {
 	border-radius: 20px;
 }
 
-.btn-2h:hover {
+.cbtn-2h:hover {
 	box-shadow: 0 4px #ab3c3c;
 	top: 2px;
 }
 
-.btn-2h:active {
+.cbtn-2h:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 2i */
-.btn-2i {
+.cbtn-2i {
 	border-radius: 50%;
 	width: 90px;
 	height: 90px;
 	padding: 0;
 }
 
-.btn-2i:hover {
+.cbtn-2i:hover {
 	box-shadow: 0 4px #ab3c3c;
 	top: 2px;
 }
 
-.btn-2i:active {
+.cbtn-2i:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 2j */
-.btn-2j {
+.cbtn-2j {
 	border-radius: 50%;
 	width: 90px;
 	height: 90px;
 	padding: 0;
 }
 
-.btn-2j:hover {
+.cbtn-2j:hover {
 	box-shadow: 0 8px #ab3c3c;
 	top: -2px;
 }
 
-.btn-2j:active {
+.cbtn-2j:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
 
 /* Button 3 */
-.btn-3 {
+.cbtn-3 {
 	background: #fcad26;
 	color: #fff;
 }
 
-.btn-3:hover {
+.cbtn-3:hover {
 	background: #f29e0d;
 }
 
-.btn-3:active {
+.cbtn-3:active {
 	background: #f58500;
 	top: 2px;
 }
 
-.btn-3:before {
+.cbtn-3:before {
 	position: absolute;
 	height: 100%;
 	left: 0;
@@ -477,36 +477,36 @@
 }
 
 /* Button 3a */
-.btn-3a {
+.cbtn-3a {
 	padding: 25px 60px 25px 120px;
 }
 
-.btn-3a:before {
+.cbtn-3a:before {
 	background: rgba(0,0,0,0.05);
 }
 
 /* Button 3b */
-.btn-3b {
+.cbtn-3b {
 	padding: 25px 60px 25px 120px;
 	border-radius: 10px;
 }
 
-.btn-3b:before {
+.cbtn-3b:before {
 	border-right: 2px solid rgba(255,255,255,0.5);
 }
 
 /* Button 3c */
-.btn-3c {
+.cbtn-3c {
 	padding: 80px 20px 20px 20px;
 	border-radius: 10px;
 	box-shadow: 0 3px #da9622;
 }
 
-.btn-3c:active {
+.cbtn-3c:active {
 	box-shadow: 0 3px #dc7801;
 }
 
-.btn-3c:before {
+.cbtn-3c:before {
 	height: 60px;
 	width: 100%;
 	line-height: 60px;
@@ -515,24 +515,24 @@
 	border-radius: 10px 10px 0 0;
 }
 
-.btn-3c:active:before {
+.cbtn-3c:active:before {
 	color: #f58500;
 }
 
 /* Button 3d */
-.btn-3d {
+.cbtn-3d {
 	padding: 25px 60px 25px 120px;
 	border-radius: 10px;
 }
 
-.btn-3d:before {
+.cbtn-3d:before {
 	background: #fff;
 	color: #fcad26;
 	z-index: 2;
 	border-radius: 10px 0 0 10px;
 }
 
-.btn-3d:after {
+.cbtn-3d:after {
 	width: 20px;
 	height: 20px;
 	background: #fff;
@@ -546,31 +546,31 @@
 	transform: rotate(45deg);
 }
 
-.btn-3d:active:before {
+.cbtn-3d:active:before {
 	color: #f58500;
 }
 
-.btn-3d:active {
+.cbtn-3d:active {
 	top: 0;
 }
 
-.btn-3d:active:after {
+.cbtn-3d:active:after {
 	left: 60px;
 }
 
 /* Button 3e */
-.btn-3e {
+.cbtn-3e {
 	padding: 25px 120px 25px 60px;
 	overflow: hidden;
 }
 
-.btn-3e:before {
+.cbtn-3e:before {
 	left: auto;
 	right: 10px;
 	z-index: 2;
 }
 
-.btn-3e:after {
+.cbtn-3e:after {
 	width: 30%;
 	height: 200%;
 	background: rgba(255,255,255,0.1);
@@ -588,28 +588,28 @@
 	transform: rotate(-20deg);
 }
 
-.btn-3e:hover:after {
+.cbtn-3e:hover:after {
 	width: 40%;
 }
 
 /* Button 4 */
-.btn-4 {
+.cbtn-4 {
 	border-radius: 50px;
 	border: 3px solid #fff;
 	color: #fff;
 	overflow: hidden;
 }
 
-.btn-4:active {
+.cbtn-4:active {
 	border-color: #17954c;
 	color: #17954c;
 }
 
-.btn-4:hover {
+.cbtn-4:hover {
 	background: #24b662;
 }
 
-.btn-4:before {
+.cbtn-4:before {
 	position: absolute;
 	height: 100%;
 	font-size: 125%;
@@ -620,56 +620,56 @@
 	transition: all 0.3s;
 }
 
-.btn-4:active:before {
+.cbtn-4:active:before {
 	color: #17954c;
 }
 
 /* Button 4a */
-.btn-4a:before {
+.cbtn-4a:before {
 	left: 130%;
 	top: 0;
 }
 
-.btn-4a:hover:before {
+.cbtn-4a:hover:before {
 	left: 80%;
 }
 
 /* Button 4b */
-.btn-4b:before {
+.cbtn-4b:before {
 	left: -50%;
 	top: 0;
 }
 
-.btn-4b:hover:before {
+.cbtn-4b:hover:before {
 	left: 10%;
 }
 
 /* Button 4c */
-.btn-4c:before {
+.cbtn-4c:before {
 	left: 70%;
 	opacity: 0;
 	top: 0;
 }
 
-.btn-4c:hover:before {
+.cbtn-4c:hover:before {
 	left: 80%;
 	opacity: 1;
 }
 
 /* Button 4d */
-.btn-4d:before {
+.cbtn-4d:before {
 	left: 30%;
 	opacity: 0;
 	top: 0;
 }
 
-.btn-4d:hover:before {
+.cbtn-4d:hover:before {
 	left: 10%;
 	opacity: 1;
 }
 
 /* Button 5 */
-.btn-5 {
+.cbtn-5 {
 	background: #823aa0;
 	color: #fff;
 	height: 70px;
@@ -682,12 +682,12 @@
 	backface-visibility: hidden;
 }
 
-.btn-5:active {
+.cbtn-5:active {
 	background: #9053a9;
 	top: 2px;
 }
 
-.btn-5 span {
+.cbtn-5 span {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -699,7 +699,7 @@
 	backface-visibility: hidden;
 }
 
-.btn-5:before {
+.cbtn-5:before {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -710,46 +710,46 @@
 	transition: all 0.3s;
 }
 
-.btn-5:active:before {
+.cbtn-5:active:before {
 	color: #703b87;
 }
 
 /* Button 5a */
-.btn-5a:hover span {
+.cbtn-5a:hover span {
 	-webkit-transform: translateY(300%);
 	-moz-transform: translateY(300%);
 	-ms-transform: translateY(300%);
 	transform: translateY(300%);
 }
 
-.btn-5a:before {
+.cbtn-5a:before {
 	left: 0;
 	top: -100%;
 }
 
-.btn-5a:hover:before {
+.cbtn-5a:hover:before {
 	top: 0;
 }
 
 /* Button 5b */
-.btn-5b:hover span {
+.cbtn-5b:hover span {
 	-webkit-transform: translateX(200%);
 	-moz-transform: translateX(200%);
 	-ms-transform: translateX(200%);
 	transform: translateX(200%);
 }
 
-.btn-5b:before {
+.cbtn-5b:before {
 	left: -100%;
 	top: 0;
 }
 
-.btn-5b:hover:before {
+.cbtn-5b:hover:before {
 	left: 0;
 }
 
 /* Button 6 */
-.btn-6 {
+.cbtn-6 {
 	font-size: 15px;
 	color: #fff;
 	background: #20426e;
@@ -761,144 +761,144 @@
 	transition: background 0.3s;
 }
 
-.btn-6:active {
+.cbtn-6:active {
 	top: 2px;
 }
 
 /* Button 6a */
-.btn-6a {
+.cbtn-6a {
 	border: 4px solid #20426e;
 }
 
-.btn-6a:hover {
+.cbtn-6a:hover {
 	background: transparent;
 	color: #ba7700;
 }
 
-.btn-6a:focus {
-	color: #fff;
+.cbtn-6a:focus {
+
 }
 
 /* Button 6b */
-.btn-6b {
+.cbtn-6b {
 	border: 4px solid #226fbe;
 	border-radius: 15px;
 }
 
-.btn-6b:hover {
+.cbtn-6b:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6c */
-.btn-6c {
+.cbtn-6c {
 	border: 4px solid #226fbe;
 	border-radius: 60px;
 }
 
-.btn-6c:hover {
+.cbtn-6c:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6d */
-.btn-6d {
+.cbtn-6d {
 	border: 2px dashed #226fbe;
 }
 
-.btn-6d:hover {
+.cbtn-6d:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6e */
-.btn-6e {
+.cbtn-6e {
 	border: 2px dashed #226fbe;
 	border-radius: 15px;
 }
 
-.btn-6e:hover {
+.cbtn-6e:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6f */
-.btn-6f {
+.cbtn-6f {
 	border: 2px dashed #226fbe;
 	border-radius: 60px;
 }
 
-.btn-6f:hover {
+.cbtn-6f:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6g */
-.btn-6g {
+.cbtn-6g {
 	border: 2px dotted #226fbe;
 }
 
-.btn-6g:hover {
+.cbtn-6g:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6h */
-.btn-6h {
+.cbtn-6h {
 	border: 2px dotted #226fbe;
 	border-radius: 15px;
 }
 
-.btn-6h:hover {
+.cbtn-6h:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6i */
-.btn-6i {
+.cbtn-6i {
 	border: 2px dotted #226fbe;
 	border-radius: 60px;
 }
 
-.btn-6i:hover {
+.cbtn-6i:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6j */
-.btn-6j {
+.cbtn-6j {
 	border: 4px double #226fbe;
 }
 
-.btn-6j:hover {
+.cbtn-6j:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6k */
-.btn-6k {
+.cbtn-6k {
 	border: 4px double #226fbe;
 	border-radius: 15px;
 }
 
-.btn-6k:hover {
+.cbtn-6k:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 6l */
-.btn-6l {
+.cbtn-6l {
 	border: 4px double #226fbe;
 	border-radius: 60px;
 }
 
-.btn-6l:hover {
+.cbtn-6l:hover {
 	background: transparent;
 	color: #226fbe;
 }
 
 /* Button 7 */
-.btn-7 {
+.cbtn-7 {
 	background: #17aa56;
 	color: #fff;
 	border-radius: 7px;
@@ -907,11 +907,11 @@
 }
 
 /* Button 7a */
-.btn-7a {
+.cbtn-7a {
 	overflow: hidden;
 }
 
-.btn-7a:before {
+.cbtn-7a:before {
 	position: absolute;
 	left: 0;
 	width: 40%;
@@ -920,13 +920,13 @@
 	color: #0a833d;
 }
 
-.btn-7a.btn-activated {
+.cbtn-7a.cbtn-activated {
 	-webkit-animation: fadeOutText 0.5s;
 	-moz-animation: fadeOutText 0.5s;
 	animation: fadeOutText 0.5s;
 }
 
-.btn-7a.btn-activated:before {
+.cbtn-7a.cbtn-activated:before {
 	-webkit-animation: moveToRight 0.5s;
 	-moz-animation: moveToRight 0.5s;
 	animation: moveToRight 0.5s;
@@ -978,11 +978,11 @@
 }
 
 /* Button 7b */
-.btn-7b {
+.cbtn-7b {
 	overflow: hidden;
 }
 
-.btn-7b:before {
+.cbtn-7b:before {
 	position: absolute;
 	left: 0;
 	width: 40%;
@@ -991,7 +991,7 @@
 	color: #0a833d;
 }
 
-.btn-7b.btn-activated:before {
+.cbtn-7b.cbtn-activated:before {
 	-webkit-animation: scaleUp 0.5s;
 	-moz-animation: scaleUp 0.5s;
 	animation: scaleUp 0.5s;
@@ -1031,12 +1031,12 @@
 }
 
 /* Icon only style */
-.btn-icon-only {
+.cbtn-icon-only {
 	font-size: 0;
 	padding: 25px 30px;
 }
 
-.btn-icon-only:before {
+.cbtn-icon-only:before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1050,16 +1050,16 @@
 }
 
 /* Button 7c */
-.btn-7c {
+.cbtn-7c {
 	overflow: hidden;
 }
 
-.btn-7c:before {
+.cbtn-7c:before {
 	color: #fff;
 	z-index: 1;
 }
 
-.btn-7c:after {
+.cbtn-7c:after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1072,7 +1072,7 @@
 	transition: none;
 }
 
-.btn-7c.btn-activated:after {
+.cbtn-7c.cbtn-activated:after {
 	-webkit-animation: fillToRight 0.7s forwards;
 	-moz-animation: fillToRight 0.7s forwards;
 	animation: fillToRight 0.7s forwards;
@@ -1097,16 +1097,16 @@
 }
 
 /* Button 7d */
-.btn-7d {
+.cbtn-7d {
 	overflow: hidden;
 }
 
-.btn-7d:before {
+.cbtn-7d:before {
 	color: #fff;
 	z-index: 1;
 }
 
-.btn-7d:after {
+.cbtn-7d:after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1119,7 +1119,7 @@
 	transition: none;
 }
 
-.btn-7d.btn-activated:after {
+.cbtn-7d.cbtn-activated:after {
 	-webkit-animation: emptyBottom 0.7s forwards;
 	-moz-animation: emptyBottom 0.7s forwards;
 	animation: emptyBottom 0.7s forwards;
@@ -1144,7 +1144,7 @@
 }
 
 /* Button 7e */
-.btn-7e:after {
+.cbtn-7e:after {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1164,7 +1164,7 @@
 	transition: none;
 }
 
-.btn-7e.btn-activated:after {
+.cbtn-7e.cbtn-activated:after {
 	-webkit-animation: scaleFade 0.5s forwards;
 	-moz-animation: scaleFade 0.5s forwards;
 	animation: scaleFade 0.5s forwards;
@@ -1204,11 +1204,11 @@
 }
 
 /* Button 7f */
-.btn-7f:before {
+.cbtn-7f:before {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #fff;
 }
-.btn-7f:after {
+.cbtn-7f:after {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1231,7 +1231,7 @@
 	transition: none;
 }
 
-.btn-7f.btn-activated:after {
+.cbtn-7f.cbtn-activated:after {
 	visibility: visible;
 	-webkit-animation: dropDown 0.3s forwards;
 	-moz-animation: dropDown 0.3s forwards;
@@ -1260,7 +1260,7 @@
 }
 
 /* Button 7g */
-.btn-7g:after {
+.cbtn-7g:after {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1281,7 +1281,7 @@
 	transition: none;
 }
 
-.btn-7g.btn-activated:after {
+.cbtn-7g.cbtn-activated:after {
 	visibility: visible;
 	-webkit-animation: dropDownFade 0.5s forwards;
 	-moz-animation: dropDownFade 0.5s forwards;
@@ -1323,12 +1323,12 @@
 
 /* Button 7h */
 
-.btn-7h span {
+.cbtn-7h span {
 	display: inline-block;
 	width: 100%;
 }
 
-.btn-7h:before {
+.cbtn-7h:before {
 	position: absolute;
 	left: 0;
 	width: 40%;
@@ -1339,23 +1339,23 @@
 
 /* Success and error */
 
-.btn-success,
-.btn-error {
+.cbtn-success,
+.cbtn-error {
 	color: transparent;
 }
 
-.btn-success:after,
-.btn-error:after {
+.cbtn-success:after,
+.cbtn-error:after {
 	z-index: 1;
 	color: #fff;
 	left: 40%;
 }
 
-.btn-success:before {
+.cbtn-success:before {
 	content: "\e001";
 }
 
-.btn-success:after {
+.cbtn-success:after {
 	content: "Success!";
 	-webkit-animation: moveUp 0.5s;
 	-moz-animation: moveUp 0.5s;
@@ -1395,7 +1395,7 @@
 	}
 }
 
-.btn-error {
+.cbtn-error {
 	-webkit-animation: shake 0.5s;
 	-moz-animation: shake 0.5s;
 	animation: shake 0.5s;
@@ -1420,11 +1420,11 @@
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
-.btn-error:before {
+.cbtn-error:before {
 	content: "\e002";
 }
 
-.btn-error:after {
+.cbtn-error:after {
 	content: "Error!";
 	-webkit-animation: scaleFromUp 0.5s;
 	-moz-animation: scaleFromUp 0.5s;
@@ -1516,7 +1516,7 @@
 }
 
 /* Button 7i */
-.btn-7i {
+.cbtn-7i {
 	box-shadow: none;
 	border-radius: 0 0 7px 7px;
 	padding: 27px 33px;
@@ -1526,11 +1526,11 @@
 	transform: translateX(-100px);
 }
 
-.btn-7i:before {
+.cbtn-7i:before {
 	line-height: 45px;
 }
 
-.btn-7i:after {
+.cbtn-7i:after {
 	height: 11px; /* should be 10px but in Chrome Version 34.0.1847.131 there's a gap because of the transform of the button */
 	width: 100%;
 	background: #17aa56;
@@ -1544,7 +1544,7 @@
 	transform-origin: 0 100%;
 }
 
-.trash-effect-active .btn-7i:after {
+.trash-effect-active .cbtn-7i:after {
 	-webkit-animation: openTrash 0.5s;
 	-moz-animation: openTrash 0.5s;
 	animation: openTrash 0.5s;
@@ -1585,7 +1585,7 @@
 	display: inline-block;
 }
 
-.btn-8 {
+.cbtn-8 {
 	display: block;
 	background: #5cbcf6;
 	outline: 1px solid transparent; /* FF jagged edges fix */
@@ -1594,12 +1594,12 @@
 	transform-style: preserve-3d;
 }
 
-.btn-8:active {
+.cbtn-8:active {
 	background: #55b7f3;
 }
 
 /* Button 8a */
-.btn-8a:after {
+.cbtn-8a:after {
 	width: 100%;
 	height: 42%; /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
 	left: 0;
@@ -1613,7 +1613,7 @@
 	transform: rotateX(90deg);
 }
 
-.btn-8a:hover {
+.cbtn-8a:hover {
 	-webkit-transform: rotateX(-15deg);
 	-moz-transform: rotateX(-15deg);
 	-ms-transform: rotateX(-15deg);
@@ -1621,7 +1621,7 @@
 }
 
 /* Button 8b */
-.btn-8b:after {
+.cbtn-8b:after {
 	width: 100%;
 	height: 40%;
 	left: 0;
@@ -1637,7 +1637,7 @@
 	transform: rotateX(-90deg);
 }
 
-.btn-8b:hover {
+.cbtn-8b:hover {
 	-webkit-transform: rotateX(15deg);
 	-moz-transform: rotateX(15deg);
 	-ms-transform: rotateX(15deg);
@@ -1645,7 +1645,7 @@
 }
 
 /* Button 8c */
-.btn-8c:after {
+.cbtn-8c:after {
 	width: 21%;
 	height: 100%;
 	left: -20%;
@@ -1661,7 +1661,7 @@
 	transform: rotateY(-90deg);
 }
 
-.btn-8c:hover {
+.cbtn-8c:hover {
 	-webkit-transform: rotateY(15deg);
 	-moz-transform: rotateY(15deg);
 	-ms-transform: rotateY(15deg);
@@ -1669,7 +1669,7 @@
 }
 
 /* Button 8d */
-.btn-8d:after {
+.cbtn-8d:after {
 	width: 20%;
 	height: 100%;
 	left: 100%;
@@ -1685,7 +1685,7 @@
 	transform: rotateY(90deg);
 }
 
-.btn-8d:hover {
+.cbtn-8d:hover {
 	-webkit-transform: rotateY(-15deg);
 	-moz-transform: rotateY(-15deg);
 	-ms-transform: rotateY(-15deg);
@@ -1693,14 +1693,14 @@
 }
 
 /* Button 8e */
-.btn-8e {
+.cbtn-8e {
 	-webkit-transform: rotateX(-15deg);
 	-moz-transform: rotateX(-15deg);
 	-ms-transform: rotateX(-15deg);
 	transform: rotateX(-15deg);
 }
 
-.btn-8e:after {
+.cbtn-8e:after {
 	width: 100%;
 	height: 42%; /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
 	left: 0;
@@ -1716,7 +1716,7 @@
 	transform: rotateX(90deg);
 }
 
-.btn-8e:active {
+.cbtn-8e:active {
 	-webkit-transform: rotateX(0deg);
 	-moz-transform: rotateX(0deg);
 	-ms-transform: rotateX(0deg);
@@ -1724,14 +1724,14 @@
 }
 
 /* Button 8f */
-.btn-8f {
+.cbtn-8f {
 	-webkit-transform: rotateX(15deg);
 	-moz-transform: rotateX(15deg);
 	-ms-transform: rotateX(15deg);
 	transform: rotateX(15deg);
 }
 
-.btn-8f:after {
+.cbtn-8f:after {
 	width: 100%;
 	height: 40%;
 	left: 0;
@@ -1747,7 +1747,7 @@
 	transform: rotateX(-90deg);
 }
 
-.btn-8f:active {
+.cbtn-8f:active {
 	-webkit-transform: rotateX(0deg);
 	-moz-transform: rotateX(0deg);
 	-ms-transform: rotateX(0deg);
@@ -1755,17 +1755,17 @@
 }
 
 /* Button 8g */
-.btn-8g {
+.cbtn-8g {
 	background: #fff;
 	color: #999;
 }
 
-.btn-8g:active {
+.cbtn-8g:active {
 	background: #fff;
 }
 
-.btn-8g:after,
-.btn-8g:before {
+.cbtn-8g:after,
+.cbtn-8g:before {
 	text-transform: uppercase;
 	width: 100%;
 	height: 100%;
@@ -1774,7 +1774,7 @@
 	line-height: 70px;
 }
 
-.btn-8g:after {
+.cbtn-8g:after {
 	top: -98%; /* should be -100% but there's a gap in Chrome Version 34.0.1847.131 */
 	background: #7aca7c;
 	color: #358337;
@@ -1789,7 +1789,7 @@
 	transform: rotateX(90deg);
 }
 
-.btn-8g:before {
+.cbtn-8g:before {
 	top: 100%;
 	background: #e96a6a;
 	color: #a33a3a;
@@ -1806,7 +1806,7 @@
 	transform: rotateX(-90deg);
 }
 
-.btn-8g.btn-success3d {
+.cbtn-8g.cbtn-success3d {
 	background: #aaa;
 	-webkit-transform-origin: 50% 100%;
 	-webkit-transform: rotateX(-90deg) translateY(100%);
@@ -1818,7 +1818,7 @@
 	transform: rotateX(-90deg) translateY(100%);
 }
 
-.btn-8g.btn-error3d  {
+.cbtn-8g.cbtn-error3d  {
 	background: #aaa;
 	-webkit-transform-origin: 50% 0%;
 	-webkit-transform: rotateX(90deg) translateY(-100%);
