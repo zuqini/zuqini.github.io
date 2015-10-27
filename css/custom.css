@@ -1,5 +1,5 @@
 html, body {
-	background-color: #2a2a2a;
+	background-color: #1a1a1a;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -35,17 +35,34 @@ nav a:hover, nav a:focus {
 	border-style: solid;
 }
 
-.navbar-nav > li > a, .navbar-brand {
+.navbar-nav {
+	overflow: hidden;
+}
+
+.navbar-nav > li {
+	padding-left:5px;
+  	padding-right:5px;
+}
+
+.navbar-nav > li > a {
     padding-top:10px;
     padding-bottom:10px;
     line-height: 30px;
 }
 
-.navbar-brand {
+.nav-brand {
+	font-weight: 700;
+	font-size: 2em;
+	margin-top:8px;
+    padding-bottom:10px;
+    margin-left: 5px;
+}
+
+/*.navbar-brand {
 	padding-top: 7px !important;
 	width:100px;
 	height:60px;
-}
+}*/
 
 button {
 	margin-bottom: 15px !important;
@@ -58,11 +75,15 @@ button {
 }
 
 .nav-custom {
-	background: #2a2a2a;
+	background: #1a1a1a;
 }
 
 #current-page {
 	color: #ba7700;
+}
+
+.left-indent {
+	margin-left: 10px;
 }
 
 .image-links {
@@ -89,13 +110,15 @@ button {
 }
 
 #console-window {
-	/*color: #1ec503;*/
-	color: #ffffff;
-	background-color: #000000;
+	/*color: #ba7700;*/
+	color: #777;
+	background-color: #0a0a0a;
 	font-family: monospace;
-	margin-bottom: 10px;
-	font-size: 12px;
+	margin-top: 10%;
+	font-size: 15px;
 	display: none;
+	resize: none;
+	border: 1px dashed;
 }
 
 #sub-title {
@@ -103,10 +126,6 @@ button {
 	padding-left: 0px;
 	margin-bottom: 20px;
 	display: none;
-}
-
-#code-result {
-	font-size: 25px;
 }
 
 hr {
@@ -117,7 +136,7 @@ hr {
     margin-right: auto;
     border-style: solid;
     border-width: 2px;
-    border-color: #2a2a2a;
+    border-color: #1a1a1a;
 } 
 
 .divider {
@@ -140,20 +159,34 @@ hr {
 }
 
 .background-view {
-	background-image: url("../resources/bg1.png");
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	/*margin-top: 60px;*/
 	position: fixed;
+	background-color: #000;
 	opacity: 0;
-	min-height: 350px;
-	height: 70%;
+	min-height: 550px;
+	height: 90%;
 	width: 100%;
-	-webkit-transition: opacity 5s ease-out;
-	-moz-transition: opacity 5s ease-out;
-	-o-transition: opacity 5s ease-out;
-    transition: opacity 5s  ease-out;
+	-webkit-transition: opacity 2s ease-out;
+	-moz-transition: opacity 2s ease-out;
+	-o-transition: opacity 2s ease-out;
+    transition: opacity 2s  ease-out;
+}
+@media screen and (min-width: 400px) {
+	.background-view {
+		background-image: url("../resources/bg_landscape.jpg");
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+		-webkit-background-position: center;
+		-moz-background-position: center;
+		-o-background-position: center;
+		background-position: center;
+		-webkit-background-repeat: no-repeat;
+		-moz-background-repeat: no-repeat;
+		-o-background-repeat: no-repeat;
+		background-repeat: no-repeat;
+	}
 }
 
 .background-show{
@@ -169,13 +202,13 @@ hr {
 .navbar-placeholder {
 	min-height: 70px;
 	height: 10%;
-	background-color: rgba(42,42,42,0.7);
+	background-color: rgba(26,26,26,0.7);
 }
 
 .overlay {
-	background-color: rgba(42,42,42,0.7);
-	min-height: 280px;
-	height: 50%;
+	background-color: rgba(26,26,26,0.7);
+	min-height: 450px;
+	height: 70%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -185,11 +218,11 @@ hr {
 }
 
 #post-overlay {
-	min-height: 35%;
+	min-height: 10%;
 	height: auto;
 	width: 100%;
 	border: 0px;
-	background-color: #2a2a2a;
+	background-color: #1a1a1a;
 	opacity: 1;
 }
 

@@ -13,43 +13,50 @@ String.prototype.shuffle = function () {
 
 $( document ).ready(function() {
 	//console-box variables
-	var code = "(function run() {" + '\n' + "   while (message != mystery)) {" + '\n' + "      message.scramble();" + '\n' + "      print(message);" + '\n' + "   }" + '\n' + "}());";
+	var code = "(function run() {" + '\n' + "   while (!(succeed = try());" + '\n' + "}());";
 	var codeIndex = 0;
 	var isTag;
 	var codeToType;
-
-	//shuffling variables
-	var target = "Thanks for checking out my website! ;-)";
-	var str = target.shuffle();
-	var count = 0;
-	var maxCount = 150;
+	var toggleCursor = false;
+	var tryCounter = 1;
+	var tryMessage = "";
 
 	function typeCode() {
 	    codeToType = code.slice(0, ++codeIndex);
 	    if (codeToType === code) {
 	    	$('#console-window').html(codeToType + '_');
-	    	setTimeout(handleCode, 500);
+	    	codeToType = codeToType + '\n' + '\n';
+	    	setInterval(function() {
+	    		displayResult();
+		      	toggleCursor = !toggleCursor;
+		    }, 500);
+
+	    	setTimeout(function() {
+	    		setInterval(function() {
+	    			setTimeout(function() {
+			    		updateTryMessage();
+			    		displayResult();
+			    	}, Math.random() * 800);
+			    }, 	200);
+	    	}, 500);
 	    	return;
 	    }
 	    $('#console-window').html(codeToType + '_');
 	    setTimeout(typeCode, 30);
 	}
 
-	function handleCode() {
-		$('#console-window').html(codeToType);
-		$('#code-result').addClass('animated zoomIn');
-		scrambleWord();
+	function updateTryMessage() {
+		tryMessage = "try #" + tryCounter++ + "...";
 	}
 
-	function scrambleWord() {
-	 	str = str.shuffle();
-		$('#code-result').html(str);
-		if(str == target || count++ === maxCount) {
-	        $('#code-result').html(target);
-	        return;
-	    }
-		setTimeout(scrambleWord, 20);
-	};
+	function displayResult() {
+		if(!toggleCursor) {
+			$('#console-window').html(codeToType + tryMessage + '\n');
+		}
+      	else {
+      		$('#console-window').html(codeToType + tryMessage + '\n' + '_');
+      	}
+	}
 
 	new Vivus('welcome-svg', {
 			file: 'resources/zuqi.svg',
@@ -59,7 +66,7 @@ $( document ).ready(function() {
 			$('#console-window').show();
 			$('.image-links').show();
 			$('#sub-title').addClass('animated fadeInUp');
-			$('#console-window').addClass('animated zoomIn');
+			$('#console-window').addClass('animated fadeInUp');
 			$('.image-links').addClass('animated fadeInUp');
 			$('.trans-grow').addClass('grow');
 			$('.background-view').addClass('background-show');

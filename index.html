@@ -4,7 +4,6 @@
 	<title>Zuqi Li</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/links.css"/>
@@ -24,15 +23,12 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	         </button>
-			<div class="navbar-header navbar-left">
-				<img src="resources/logo.png" class="navbar-brand"/>
+			<div class="navbar-header navbar-left cl-effect-header">
+				<a href="/"class="nav-brand"><span data-hover="Home">Zuqi Li</span></a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right cl-effect">
-					<li><a id="current-page" href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<li><a href="/profile"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-					<li><a href="/projects"><span class="glyphicon glyphicon-console"></span> Projects</a></li>
-					<li><a href="/music"><span class="glyphicon glyphicon-headphones"></span> Music</a></li>
+					<li><a href="/portfolio"><span class="glyphicon glyphicon-user"></span> Portfolio</a></li>
 					<li><a target="_blank" href="/resources/ZuqiLi_Resume.pdf"><span class="glyphicon glyphicon-file"></span> Résumé</a></li>
 					<li><a href="/contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
 				</ul>
@@ -44,44 +40,37 @@
 		<div class="navbar-placeholder"></div>
 		<div class="overlay">
 			<div class="container">
-				<div class="svg-container">
-					<div id="welcome-svg"></div>
+				<div class="left-indent">
+					<div class="svg-container">
+						<div id="welcome-svg"></div>
+					</div>
+					<div class="container" id="sub-title">
+						Software Developer | Musician
+					</div>
+					<ul class="image-links">
+						<li>
+							<a href="https://github.com/zuqini">
+								<img src="resources/icons/GitHub.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://ca.linkedin.com/in/zuqili">
+								<img src="resources/icons/linkedin.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/lizuqiliang">
+								<img src="resources/icons/facebook.png"/>
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div class="container" id="sub-title">
-					Software Developer | Musician
-				</div>
-				<ul class="image-links">
-					<li>
-						<a href="https://github.com/zuqini">
-							<img src="resources/icons/GitHub.png"/>
-						</a>
-					</li>
-					<li>
-						<a href="https://ca.linkedin.com/in/zuqili">
-							<img src="resources/icons/linkedin.png"/>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/lizuqiliang">
-							<img src="resources/icons/facebook.png"/>
-						</a>
-					</li>
-				</ul>
+				<textarea readonly id="console-window" rows="6" cols="32"></textarea>
 			</div>
 		</div>
 		<div id="post-overlay">
 			<div class="no-overflow">
 				<hr class="trans-grow divider">
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<textarea readonly id="console-window" rows="6" cols="35"></textarea>
-					</div>
-					<div class="col-md-8">
-						<div id="code-result"></div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>

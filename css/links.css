@@ -33,6 +33,38 @@ a:focus {
 	color: #ba7700 !important;
 }
 
+/* Effect 5: same word slide in */
+.cl-effect-header a {
+	overflow: hidden;
+	padding: 0 4px;
+	height: 1.5em;
+}
+
+.cl-effect-header a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-header a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.cl-effect-header a:hover span,
+.cl-effect-header a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
 /* Effect 13: three circles */
 @media screen and (min-width: 768px) {
 	.cl-effect a {
