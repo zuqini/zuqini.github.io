@@ -17,7 +17,7 @@ $( document ).ready(function() {
 	var codeIndex = 0;
 	var isTag;
 	var codeToType;
-	var toggleCursor = false;
+	var toggleCursor = true;
 	var tryCounter = 1;
 	var tryMessage = "";
 
@@ -27,8 +27,8 @@ $( document ).ready(function() {
 	    	$('#console-window').html(codeToType + '_');
 	    	codeToType = codeToType + '\n' + '\n';
 	    	setInterval(function() {
+	    		toggleCursor = !toggleCursor;
 	    		displayResult();
-		      	toggleCursor = !toggleCursor;
 		    }, 500);
 
 	    	setTimeout(function() {
@@ -51,7 +51,7 @@ $( document ).ready(function() {
 
 	function displayResult() {
 		if(!toggleCursor) {
-			$('#console-window').html(codeToType + tryMessage + '\n');
+			$('#console-window').html(codeToType + tryMessage + '\n' + " ");
 		}
       	else {
       		$('#console-window').html(codeToType + tryMessage + '\n' + '_');

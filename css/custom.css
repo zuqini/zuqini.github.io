@@ -119,6 +119,7 @@ button {
 	display: none;
 	resize: none;
 	border: 1px dashed;
+	letter-spacing: 2px;
 }
 
 #sub-title {
@@ -171,7 +172,7 @@ hr {
 	-o-transition: opacity 2s ease-out;
     transition: opacity 2s  ease-out;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
 	.background-view {
 		background-image: url("../resources/bg_landscape.jpg");
 		-webkit-background-size: contain;
