@@ -58,12 +58,6 @@ nav a:hover, nav a:focus {
     margin-left: 5px;
 }
 
-/*.navbar-brand {
-	padding-top: 7px !important;
-	width:100px;
-	height:60px;
-}*/
-
 button {
 	margin-bottom: 15px !important;
 }
@@ -109,16 +103,50 @@ button {
 	width: 250px;
 }
 
+.carousel-indicators {
+	z-index: 10;
+}
+
+.carousel-control {
+	z-index: 10;
+}
+
+#bg-carousel .carousel-inner, #bg-carousel .item {
+    height: 100%;
+}
+
+#bg-carousel {
+	min-height: 450px;
+	height: 80%;
+}
+
+#bg-carousel .fill {
+/*    background-position: center center;*/
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#bg-carousel .center {
+    background-position: center center;
+}
+
 #console-window {
 	/*color: #ba7700;*/
-	color: #777;
-	background-color: #0a0a0a;
-	font-family: monospace;
-	margin-top: 10%;
-	font-size: 15px;
+	color: #fff;
+	background-color: transparent;
+	border-color: transparent;
+	/*border: 1px dashed;*/
+	/*font-family: monospace;*/
+	font-size: 25px;
 	display: none;
 	resize: none;
-	border: 1px dashed;
+}
+
+@media screen and (max-width: 767px) {
+	#console-window {
+		display: none !important;
+	}	
 }
 
 #sub-title {
@@ -163,30 +191,12 @@ hr {
 	position: fixed;
 	background-color: #000;
 	opacity: 0;
-	min-height: 550px;
-	height: 90%;
+	height: 100%;
 	width: 100%;
 	-webkit-transition: opacity 2s ease-out;
 	-moz-transition: opacity 2s ease-out;
 	-o-transition: opacity 2s ease-out;
     transition: opacity 2s  ease-out;
-}
-@media screen and (min-width: 500px) {
-	.background-view {
-		background-image: url("../resources/bg_landscape.jpg");
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
-		background-size: contain;
-		-webkit-background-position: center;
-		-moz-background-position: center;
-		-o-background-position: center;
-		background-position: center;
-		-webkit-background-repeat: no-repeat;
-		-moz-background-repeat: no-repeat;
-		-o-background-repeat: no-repeat;
-		background-repeat: no-repeat;
-	}
 }
 
 .background-show{
@@ -195,19 +205,19 @@ hr {
 
 .foreground-view {
 	position: absolute;
+	overflow: hidden;
 	height: 100%;
 	width: 100%;
 }
 
 .navbar-placeholder {
-	min-height: 70px;
 	height: 10%;
+	min-height: 70px;
 	background-color: rgba(26,26,26,0.7);
 }
 
 .overlay {
 	background-color: rgba(26,26,26,0.7);
-	min-height: 480px;
 	height: 70%;
 	width: 100%;
 	border: 0px;
@@ -218,7 +228,7 @@ hr {
 }
 
 #post-overlay {
-	min-height: 10%;
+	min-height: 20%;
 	height: auto;
 	width: 100%;
 	border: 0px;

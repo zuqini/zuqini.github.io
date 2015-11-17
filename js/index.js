@@ -13,7 +13,7 @@ String.prototype.shuffle = function () {
 
 $( document ).ready(function() {
 	//console-box variables
-	var code = "(function run() {" + '\n' + "   while (!(succeed = try());" + '\n' + "}());";
+	var code = "(function run() {" + '\n' + "        while (!(succeed = try());" + '\n' + "}());";
 	var codeIndex = 0;
 	var isTag;
 	var codeToType;
@@ -66,7 +66,7 @@ $( document ).ready(function() {
 			$('#console-window').show();
 			$('.image-links').show();
 			$('#sub-title').addClass('animated fadeInUp');
-			$('#console-window').addClass('animated fadeInUp');
+			$('#console-window').addClass('animated fadeIn');
 			$('.image-links').addClass('animated fadeInUp');
 			$('.trans-grow').addClass('grow');
 			$('.background-view').addClass('background-show');

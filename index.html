@@ -35,37 +35,76 @@
 			</div>
 		</div>
 	</nav>
-	<div class="background-view"></div>
+	<div class="background-view">
+		<div id="bg-carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bg-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#bg-carousel" data-slide-to="1"></li>
+				<li data-target="#bg-carousel" data-slide-to="2"></li>
+				<li data-target="#bg-carousel" data-slide-to="3"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div style="background-image:url('resources/bg1.jpg')" class="fill center"></div>
+				</div>
+				<div class="item">
+					<div style="background-image:url('resources/bg2.jpg')" class="fill"></div>
+				</div>
+
+				<div class="item">
+					<div style="background-image:url('resources/bg3.jpg')" class="fill"></div>
+				</div>
+
+				<div class="item">
+					<div style="background-image:url('resources/bg4.jpg')" class="fill"></div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#bg-carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#bg-carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
 	<div class="foreground-view">
 		<div class="navbar-placeholder"></div>
 		<div class="overlay">
 			<div class="container">
-				<div class="left-indent">
-					<div class="svg-container">
-						<div id="welcome-svg"></div>
+				<div class="col-sm-4">
+					<div class="left-indent">
+						<div class="svg-container">
+							<div id="welcome-svg"></div>
+						</div>
+						<div class="container" id="sub-title">
+							Software Developer | Musician
+						</div>
+						<ul class="image-links">
+							<li>
+								<a href="https://github.com/zuqini">
+									<img src="resources/icons/GitHub.png"/>
+								</a>
+							</li>
+							<li>
+								<a href="https://ca.linkedin.com/in/zuqili">
+									<img src="resources/icons/linkedin.png"/>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/lizuqiliang">
+									<img src="resources/icons/facebook.png"/>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class="container" id="sub-title">
-						Software Developer | Musician
-					</div>
-					<ul class="image-links">
-						<li>
-							<a href="https://github.com/zuqini">
-								<img src="resources/icons/GitHub.png"/>
-							</a>
-						</li>
-						<li>
-							<a href="https://ca.linkedin.com/in/zuqili">
-								<img src="resources/icons/linkedin.png"/>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/lizuqiliang">
-								<img src="resources/icons/facebook.png"/>
-							</a>
-						</li>
-					</ul>
 				</div>
-				<textarea readonly id="console-window" rows="7" cols="35"></textarea>
+				<div class="col-sm-4 col-sm-offset-3">
+					<textarea readonly id="console-window" rows="7" cols="35"></textarea>
+				</div>
 			</div>
 		</div>
 		<div id="post-overlay">
@@ -75,4 +114,5 @@
 		</div>
 	</div>
 </body>
+
 </html>
