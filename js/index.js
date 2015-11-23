@@ -20,17 +20,6 @@ $( document ).ready(function() {
 	var toggleCursor = true;
 	var tryCounter = 1;
 	var tryMessage = "";
-	//-------------------
-	$('#sub-title').show();
-	$('#console-window').show();
-	$('.image-links').show();
-	$('#sub-title').addClass('animated fadeInUp');
-	$('#console-window').addClass('animated fadeIn');
-	$('.image-links').addClass('animated fadeInUp');
-	$('.trans-grow').addClass('grow');
-	$('.background-view').addClass('background-show');
-	typeCode();
-	//-------------------
 
 	function typeCode() {
 	    codeToType = code.slice(0, ++codeIndex);
