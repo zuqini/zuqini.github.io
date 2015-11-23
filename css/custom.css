@@ -76,10 +76,6 @@ button {
 	color: #ba7700;
 }
 
-.left-indent {
-	margin-left: 10px;
-}
-
 .image-links {
 	padding-left: 0px;
 	display: none;
@@ -97,18 +93,90 @@ button {
 .image-links>li>a>img {
 	height:50px;
 	width:50px;
+	pointer-events: auto;
+}
+
+#sub-title {
+	font-size: 20px;
+	padding-left: 0px;
+	margin-bottom: 16px;
+	display: none;
 }
 
 .svg-container {
 	width: 250px;
 }
 
-.carousel-indicators {
-	z-index: 10;
+@media screen and (max-width: 767px) {
+	.image-links>li>a>img {
+		height:25px;
+		width:25px;
+	}
+
+	#sub-title {
+		font-size: 13px;
+		padding-left: 0px;
+		margin-bottom: 8px;
+		display: none;
+	}
+
+	.svg-container {
+		width: 155px;
+	}
+
+	#console-window {
+		margin-top: 10px;
+		font-size: 10px !important;
+	}
 }
 
-.carousel-control {
-	z-index: 10;
+@media screen and (max-height: 479px) {
+	.image-links>li>a>img {
+		height:25px;
+		width:25px;
+	}
+
+	#sub-title {
+		font-size: 10px;
+		padding-left: 0px;
+		margin-bottom: 8px;
+		display: none;
+	}
+
+	.svg-container {
+		width: 150px;
+	}
+
+	#console-window {
+		display: none !important;
+	}	
+}
+
+@media screen and (max-height: 279px) {
+	.image-links>li>a>img {
+		display: none;
+	}
+
+	#sub-title {
+		font-size: 5px;
+		padding-left: 0px;
+		margin-bottom: 0px;
+		display: none;
+	}
+
+	.svg-container {
+		width: 50px;
+	}
+
+	#console-window {
+		display: none !important;
+	}	
+}
+
+@media (max-height: 430px) {
+	.carousel-indicators {
+	    display: none;
+	}
 }
 
 #bg-carousel .carousel-inner, #bg-carousel .item {
@@ -116,7 +184,6 @@ button {
 }
 
 #bg-carousel {
-	min-height: 450px;
 	height: 80%;
 }
 
@@ -141,19 +208,6 @@ button {
 	font-size: 25px;
 	display: none;
 	resize: none;
-}
-
-@media screen and (max-width: 767px) {
-	#console-window {
-		display: none !important;
-	}	
-}
-
-#sub-title {
-	font-size: 20px;
-	padding-left: 0px;
-	margin-bottom: 20px;
-	display: none;
 }
 
 hr {
@@ -186,6 +240,11 @@ hr {
 	overflow:hidden;
 }
 
+.welcome-container {
+	padding-top: 80px;
+	overflow: none;
+}
+
 .background-view {
 	/*margin-top: 60px;*/
 	position: fixed;
@@ -205,20 +264,15 @@ hr {
 
 .foreground-view {
 	position: absolute;
+	pointer-events: none;
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
 }
 
-.navbar-placeholder {
-	height: 10%;
-	min-height: 70px;
-	background-color: rgba(26,26,26,0.7);
-}
-
 .overlay {
-	background-color: rgba(26,26,26,0.7);
-	height: 70%;
+	background-color: rgba(26,26,26,0.5);
+	height: 80%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
