@@ -11,6 +11,13 @@ String.prototype.shuffle = function () {
     return a.join("");
 }
 
+function loadPortrait() {
+	$('.portrait').show();
+	$('.portrait').addClass('animated fadeInLeft');
+	$('.description').show();
+	$('.description').addClass('animated fadeInRight');
+}
+
 $( document ).ready(function() {
 	//console-box variables
 	var code = "(function run() {" + '\n' + "        while (!(succeed = try());" + '\n' + "}());";
@@ -62,12 +69,8 @@ $( document ).ready(function() {
 			file: 'resources/zuqi.svg',
 			type: 'oneByOne'
 		}, function(vivus) {
-			$('#sub-title').show();
-			$('#console-window').show();
-			$('.image-links').show();
-			$('#sub-title').addClass('animated fadeInUp');
-			$('#console-window').addClass('animated fadeIn');
-			$('.image-links').addClass('animated fadeInUp');
+			$('.fadeInUp-container').show();
+			$('.fadeInUp-container').addClass('animated fadeInUp');
 			$('.trans-grow').addClass('grow');
 			$('.background-view').addClass('background-show');
 			$(window).scrollTop($(window).scrollTop());
