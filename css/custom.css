@@ -126,7 +126,6 @@ button {
 		font-size: 13px;
 		padding-left: 0px;
 		margin-bottom: 8px;
-		display: none;
 	}
 
 	.svg-container {
@@ -149,32 +148,10 @@ button {
 		font-size: 10px;
 		padding-left: 0px;
 		margin-bottom: 8px;
-		display: none;
 	}
 
 	.svg-container {
 		width: 150px;
-	}
-
-	#console-window {
-		display: none !important;
-	}	
-}
-
-@media screen and (max-height: 279px) {
-	.image-links>li>a>img {
-		display: none;
-	}
-
-	#sub-title {
-		font-size: 5px;
-		padding-left: 0px;
-		margin-bottom: 0px;
-		display: none;
-	}
-
-	.svg-container {
-		width: 50px;
 	}
 
 	#console-window {
