@@ -22,7 +22,6 @@ $( document ).ready(function() {
 	//console-box variables
 	var code = "(function run() {" + '\n' + "        while (!(succeed = try());" + '\n' + "}());";
 	var codeIndex = 0;
-	var isTag;
 	var codeToType;
 	var toggleCursor = true;
 	var tryCounter = 1;
@@ -53,6 +52,9 @@ $( document ).ready(function() {
 	}
 
 	function updateTryMessage() {
+		if(tryCounter > 9007199254740992) {
+			tryCounter = -9007199254740992;
+		}
 		tryMessage = "try #" + tryCounter++ + "...";
 	}
 
@@ -65,6 +67,26 @@ $( document ).ready(function() {
       	}
 	}
 
+	var description = "<p>Hi there, thanks for visiting my site! :)" +
+							"<br><br>I am passionate about developing software applications for <span style='color:yellow;'>web</span> and <span style='color:yellow;'>mobile</span> platforms with" +
+							" <span style='color:red; font-size:20px'>elegant</span> design and <span style='color:red; font-size:20px'>scalable</span> code." +
+							"<br><br>Want to get to know me better? Check out my <a href='/portfolio'><span style='text-decoration: underline; font-size:18px;'>portfolio</span></a>" +
+							" or take a look at my <a target='_blank' href='/resources/ZuqiLi_Resume.pdf'><span style='text-decoration: underline; font-size:18px;'>résumé</span></a>.<p>";
+	var isTag;
+	var descriptionIndex = 0;
+	var typedDescription;
+	function typeDescription() {
+	    typedDescription = description.slice(0, ++descriptionIndex);
+	    if (typedDescription === description) return;
+
+	    document.getElementById('description').innerHTML = typedDescription + '_';
+	    var char = typedDescription.slice(-1);
+	    if( char === '<' ) isTag = true;
+	    if( char === '>' ) isTag = false;
+	    if (isTag) return typeDescription();
+	    setTimeout(typeDescription, 30);
+	}
+
 	new Vivus('welcome-svg', {
 			file: 'resources/zuqi.svg',
 			type: 'oneByOne'
@@ -75,6 +97,7 @@ $( document ).ready(function() {
 			$('.background-view').addClass('background-show');
 			$(window).scrollTop($(window).scrollTop());
 			typeCode();
+			typeDescription();
 		}
 	);
 });
