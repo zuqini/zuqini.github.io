@@ -165,22 +165,26 @@ button {
 	}
 }
 
-#bg-carousel .carousel-inner, #bg-carousel .item {
+.carousel-caption {
+	bottom: 30px;
+}
+
+#carousel-main .carousel-inner, #carousel-main .item {
     height: 100%;
 }
 
-#bg-carousel {
-	height: 80%;
+#carousel-main {
+	height: 75%;
 }
 
-#bg-carousel .fill {
+#carousel-main .fill {
 /*    background-position: center center;*/
     background-size: cover;
     height: 100%;
     width: 100%;
 }
 
-#bg-carousel .center {
+#carousel-main .center {
     background-position: center center;
 }
 
@@ -226,7 +230,7 @@ hr {
 .background-view {
 	/*margin-top: 60px;*/
 	position: absolute;
-	background-color: #000;
+	background-color: #1a1a1a;
 	opacity: 0;
 	height: 100%;
 	width: 100%;
@@ -248,8 +252,8 @@ hr {
 }
 
 .overlay {
-	background-color: rgba(26,26,26,0.5);
-	height: 80%;
+	background-color: rgba(26,26,26,0.7);
+	height: 75%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -258,13 +262,11 @@ hr {
 	background-size: cover;
 }
 
-#post-overlay {
-	min-height: 20%;
+.post-overlay {
+	min-height: 25%;
 	height: auto;
 	width: 100%;
 	border: 0px;
-	background-color: #1a1a1a;
-	opacity: 1;
 }
 
 .title {
@@ -282,13 +284,6 @@ hr {
 	cursor: default;
 }
 
-.portrait {
-	width: 250px;
-	height: 250px;
-	display: none;
-	margin-bottom: 3%;
-}
-
 .divider {
 	margin-bottom: 50px;
 }
@@ -296,5 +291,12 @@ hr {
 .description {
 	margin-top: 3%;
 	font-size: 20px;
+	display: none;
+}
+
+.portrait {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 3%;
 	display: none;
 }
