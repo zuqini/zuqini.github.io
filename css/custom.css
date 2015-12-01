@@ -198,7 +198,7 @@ button {
 }
 
 #carousel-main {
-	height: 75%;
+	height: 70%;
 }
 
 #carousel-main .fill {
@@ -277,7 +277,7 @@ hr {
 
 .overlay {
 	background-color: transparent;
-	height: 75%;
+	height: 70%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -287,7 +287,7 @@ hr {
 }
 
 .post-overlay {
-	min-height: 25%;
+	min-height: 30%;
 	height: auto;
 	width: 100%;
 	border: 0px;
@@ -313,6 +313,6 @@ hr {
 }
 
 #description {
-	font-size: 15px;
+	font-size: 18px;
 	pointer-events: all;
 }

@@ -67,24 +67,32 @@ $( document ).ready(function() {
       	}
 	}
 
-	var description = "<p>Hi there, thanks for visiting my site! :)" +
-							"<br><br>I am passionate about developing software applications for <span style='color:yellow;'>web</span> and <span style='color:yellow;'>mobile</span> platforms with" +
-							" <span style='color:red; font-size:20px'>elegant</span> design and <span style='color:red; font-size:20px'>scalable</span> code." +
-							"<br><br>Want to get to know me better? Check out my <a href='/portfolio'><span style='text-decoration: underline; font-size:18px;'>portfolio</span></a>" +
-							" or take a look at my <a target='_blank' href='/resources/ZuqiLi_Resume.pdf'><span style='text-decoration: underline; font-size:18px;'>résumé</span></a>.<p>";
+	var description = ["<p>Hi there, thanks for visiting my site! :)<br><br>",
+							"I am a Software Engineering student at University of Waterloo.<br><br>",
+							"I am passionate about developing software applications for <span style='color:yellow;'>web</span> and <span style='color:yellow;'>mobile</span> platforms with <span style='color:red; font-size:25px'>elegant</span> design and <span style='color:red; font-size:25px'>scalable</span> code.<br><br>",
+							"Want to get to know me better? Check out my <a href='/portfolio'><span style='text-decoration: underline; font-size:22px;'>portfolio</span></a> or take a look at my <a target='_blank' href='/resources/ZuqiLi_Resume.pdf'><span style='text-decoration: underline; font-size:22px;'>résumé</span></a>.<p>"];
 	var isTag;
+	var characterIndex = 0;
 	var descriptionIndex = 0;
 	var typedDescription;
 	function typeDescription() {
-	    typedDescription = description.slice(0, ++descriptionIndex);
-	    if (typedDescription === description) return;
-
-	    document.getElementById('description').innerHTML = typedDescription + '_';
-	    var char = typedDescription.slice(-1);
-	    if( char === '<' ) isTag = true;
-	    if( char === '>' ) isTag = false;
-	    if (isTag) return typeDescription();
-	    setTimeout(typeDescription, 30);
+		typedDescription = description[descriptionIndex].slice(0, ++characterIndex);
+		if (typedDescription === description[descriptionIndex]) {
+			if(++descriptionIndex == 4) {
+				return;
+			} else {
+				description[descriptionIndex] = description[descriptionIndex - 1] + description[descriptionIndex];
+				isTag = false;
+				setTimeout(typeDescription, 400);
+			}
+	    } else {
+			document.getElementById('description').innerHTML = typedDescription + '_';
+			var char = typedDescription.slice(-1);
+			if( char === '<' ) isTag = true;
+			if( char === '>' ) isTag = false;
+			if (isTag) return typeDescription();
+			setTimeout(typeDescription, 15);
+	    }
 	}
 
 	new Vivus('welcome-svg', {

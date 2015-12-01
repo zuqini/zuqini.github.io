@@ -7,3 +7,11 @@
 .contact-info {
 	font-size: 1em;
 }
+
+.title {
+	margin-top: 80px;
+}
+
+.foreground-view {
+	pointer-events: auto;
+}
