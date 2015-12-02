@@ -69,8 +69,7 @@ $( document ).ready(function() {
 
 	var description = ["<p>Hi there, thanks for visiting my site! :)<br><br>",
 							"I am a Software Engineering student at University of Waterloo.<br><br>",
-							"I am passionate about developing software applications for <span style='color:yellow;'>web</span> and <span style='color:yellow;'>mobile</span> platforms with <span style='color:red; font-size:25px'>elegant</span> design and <span style='color:red; font-size:25px'>scalable</span> code.<br><br>",
-							"Want to get to know me better? Check out my <a href='/portfolio'><span style='text-decoration: underline; font-size:22px;'>portfolio</span></a> or take a look at my <a target='_blank' href='/resources/ZuqiLi_Resume.pdf'><span style='text-decoration: underline; font-size:22px;'>résumé</span></a>.<p>"];
+							"I am passionate about developing software applications for <span style='color:#ba7700; font-size:25px'>web</span> and <span style='color:#ba7700; font-size:25px'>mobile</span> platforms with <span style='color:#ba7700; font-size:25px'>elegant</span> design and <span style='color:#ba7700; font-size:25px'>scalable</span> code.<br><br>"];
 	var isTag;
 	var characterIndex = 0;
 	var descriptionIndex = 0;
@@ -78,7 +77,7 @@ $( document ).ready(function() {
 	function typeDescription() {
 		typedDescription = description[descriptionIndex].slice(0, ++characterIndex);
 		if (typedDescription === description[descriptionIndex]) {
-			if(++descriptionIndex == 4) {
+			if(++descriptionIndex == 3) {
 				return;
 			} else {
 				description[descriptionIndex] = description[descriptionIndex - 1] + description[descriptionIndex];
