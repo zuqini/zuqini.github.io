@@ -15,3 +15,8 @@
 .foreground-view {
 	pointer-events: auto;
 }
+
+.contact-message {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
