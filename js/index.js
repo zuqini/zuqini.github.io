@@ -77,7 +77,7 @@ $( document ).ready(function() {
 	function typeDescription() {
 		typedDescription = description[descriptionIndex].slice(0, ++characterIndex);
 		if (typedDescription === description[descriptionIndex]) {
-			if(++descriptionIndex == 3) {
+			if(++descriptionIndex == description.length) {
 				return;
 			} else {
 				description[descriptionIndex] = description[descriptionIndex - 1] + description[descriptionIndex];
