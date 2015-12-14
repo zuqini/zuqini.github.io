@@ -106,7 +106,7 @@ button {
 }
 
 .welcome-window {
-	background-color: rgba(26,26,26,0.3);
+	background-color: rgba(26,26,26,0.5);
 	border-radius: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -116,7 +116,7 @@ button {
 #console-window {
 	/*color: #ba7700;*/
 	color: #fff;
-	background-color: rgba(26,26,26,0.3);
+	background-color: rgba(26,26,26,0.5);
 	border-radius: 20px;
 	border-color: transparent;
 	padding-top: 10px;
@@ -198,14 +198,27 @@ button {
 }
 
 #carousel-main {
-	height: 70%;
+	height: 75%;
 }
 
 #carousel-main .fill {
-/*    background-position: center center;*/
     background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+#carousel-main .contain {
+	background-size: contain;
+	height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption span {
+	background-color: rgba(26,26,26,0.8);
+	border-radius: 5px;
+	padding: 4px 8px;
 }
 
 .fadeInUp-container {
@@ -273,7 +286,7 @@ hr {
 
 .overlay {
 	background-color: transparent;
-	height: 70%;
+	height: 75%;
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -283,7 +296,7 @@ hr {
 }
 
 .post-overlay {
-	min-height: 30%;
+	min-height: 25%;
 	height: auto;
 	width: 100%;
 	border: 0px;
@@ -292,6 +305,11 @@ hr {
 .title {
 	font-size: 40px;
 	letter-spacing: 0.5px;
+	margin-top: 80px;
+}
+
+.title {
+	margin-top: 80px;
 }
 
 .hr-left {

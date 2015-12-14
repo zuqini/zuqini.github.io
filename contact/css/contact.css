@@ -8,15 +8,11 @@
 	font-size: 1em;
 }
 
-.title {
-	margin-top: 80px;
+.contact-message {
+	font-size: 20px;
+	margin-bottom: 50px;
 }
 
 .foreground-view {
 	pointer-events: auto;
-}
-
-.contact-message {
-	font-size: 20px;
-	margin-bottom: 50px;
 }
