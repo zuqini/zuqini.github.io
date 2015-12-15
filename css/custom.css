@@ -194,6 +194,10 @@ button {
 }
 
 @media (max-height: 300px) {
+	.welcome-window {
+		padding-bottom: 5px;
+	}
+
 	.image-links>li>a>img {
 		height:20px;
 		width:20px;
