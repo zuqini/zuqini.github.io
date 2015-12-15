@@ -193,6 +193,23 @@ button {
 	}
 }
 
+@media (max-height: 300px) {
+	.image-links>li>a>img {
+		height:20px;
+		width:20px;
+	}
+
+	#sub-title {
+		font-size: 10px;
+		padding-left: 0px;
+		margin-bottom: 4px;
+	}
+
+	.svg-container {
+		width: 125px;
+	}
+}
+
 #carousel-main .carousel-inner, #carousel-main .item {
     height: 100%;
 }
