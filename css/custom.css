@@ -329,10 +329,6 @@ hr {
 	margin-top: 80px;
 }
 
-.title {
-	margin-top: 80px;
-}
-
 .hr-left {
 	margin-left: 0px;
 	-webkit-transition: width 2s ease-out; /* For Safari 3.1 to 6.0 */

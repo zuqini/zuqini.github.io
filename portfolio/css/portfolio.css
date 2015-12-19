@@ -2,12 +2,16 @@
 	pointer-events: auto;
 }
 
-.project-img {
+.project {
 	width: 400px;
-	height: 270px;
-	margin: 0 auto;
-	overflow: hidden;
+	height: 350px;
+	margin: 10px auto;
 	position: relative;
+}
+
+.project-img {
+	height: 270px;
+	overflow: hidden;
 }
 
 .project-img img {
@@ -22,4 +26,8 @@
 
 .project-img:hover img {
 	transform: translateY(-100%);
+}
+
+.project-desc {
+	height: 80px;
 }
