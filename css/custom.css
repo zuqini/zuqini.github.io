@@ -1,5 +1,5 @@
 html, body {
-	background-color: #1a1a1a;
+	background-color: #222;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -7,6 +7,22 @@ html, body {
 	font-family: 'Lato', sans-serif;
 	color: #ffffff;
 	height: 100%
+}
+
+.background-view {
+	position: absolute;
+	background-color: #1a1a1a;
+	opacity: 0;
+	height: 75%;
+	width: 100%;
+	-webkit-transition: opacity 2s ease-out;
+	-moz-transition: opacity 2s ease-out;
+	-o-transition: opacity 2s ease-out;
+    transition: opacity 2s  ease-out;
+}
+
+.background-show{
+	opacity: 1;
 }
 
 nav a {
@@ -25,6 +41,7 @@ nav a:hover, nav a:focus {
 }
 
 .navbar {
+	background-color: #1a1a1a;
 	min-height:30px !important;
 	position: fixed;
 	width: 100%;
@@ -68,10 +85,6 @@ button {
     padding: 15px 15px;
 }
 
-.nav-custom {
-	background: #1a1a1a;
-}
-
 #current-page {
 	color: #ba7700;
 }
@@ -105,31 +118,22 @@ button {
 	margin-bottom: 16px;
 }
 
-.welcome-window {
-	background-color: rgba(26,26,26,0.5);
-	border-radius: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-}
-
-#console-window {
-	/*color: #ba7700;*/
-	color: #fff;
-	background-color: rgba(26,26,26,0.5);
-	border-radius: 20px;
-	border-color: transparent;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	font-size: 25px;
-	resize: none;
-}
-
 .carousel-caption {
 	bottom: 30px;
 	font-size: 16px;
 }
+
+#console-window {
+	position: absolute;
+	color: #fff;
+	right: 0px;
+	background-color: rgba(26,26,26,0);
+	border-color: transparent;
+	padding: 0px 10px;
+	font-size: 25px;
+	resize: none;
+}
+
 
 @media screen and (max-width: 767px) {
 	.image-links>li>a>img {
@@ -147,20 +151,19 @@ button {
 		margin-bottom: 8px;
 	}
 
+	#console-window {
+		font-size: 15px;
+	}	
+
 	.svg-container {
 		width: 155px;
-	}
-
-	#console-window {
-		margin-top: 10px;
-		font-size: 10px !important;
 	}
 }
 
 @media screen and (max-width: 479px) {
 	#console-window {
-		display: none !important;
-	}	
+		display: none;
+	}
 }
 
 @media screen and (max-height: 479px) {
@@ -180,37 +183,26 @@ button {
 	}
 
 	#console-window {
-		display: none !important;
-	}	
-}
-
-@media (max-height: 430px) {
-	.carousel-indicators {
-	    display: none;
-	}
-	.carousel-caption {
-	    display: none;
+		font-size: 15px;
 	}
 }
 
-@media (max-height: 300px) {
-	.welcome-window {
-		padding-bottom: 5px;
-	}
 
+@media screen and (max-height: 370px) {
 	.image-links>li>a>img {
-		height:20px;
-		width:20px;
+		display: none;
 	}
 
 	#sub-title {
-		font-size: 10px;
-		padding-left: 0px;
-		margin-bottom: 4px;
+		display: none;
 	}
 
 	.svg-container {
-		width: 125px;
+		display: none;
+	}
+
+	#console-window {
+		display: none;
 	}
 }
 
@@ -219,7 +211,7 @@ button {
 }
 
 #carousel-main {
-	height: 75%;
+	height: 100%;
 }
 
 #carousel-main .fill {
@@ -237,7 +229,6 @@ button {
 }
 
 .carousel-caption span {
-	background-color: rgba(26,26,26,0.8);
 	border-radius: 5px;
 	padding: 4px 8px;
 }
@@ -257,10 +248,6 @@ hr {
     border-color: #1a1a1a;
 } 
 
-.divider {
-	margin-bottom: 20px;
-}
-
 .trans-grow {
     -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
     transition: width 1s  ease-out;
@@ -272,30 +259,9 @@ hr {
 	width:100%;
 }
 
-.no-overflow {
-	overflow:hidden;
-}
-
 .welcome-container {
-	padding-top: 65px;
-	overflow: none;
-}
-
-.background-view {
-	/*margin-top: 60px;*/
-	position: absolute;
-	background-color: #1a1a1a;
-	opacity: 0;
-	height: 100%;
+	padding-top: 75px;
 	width: 100%;
-	-webkit-transition: opacity 2s ease-out;
-	-moz-transition: opacity 2s ease-out;
-	-o-transition: opacity 2s ease-out;
-    transition: opacity 2s  ease-out;
-}
-
-.background-show{
-	opacity: 1;
 }
 
 .foreground-view {
@@ -306,7 +272,7 @@ hr {
 }
 
 .overlay {
-	background-color: transparent;
+	background-color: rgba(26,26,26,0.5);
 	height: 75%;
 	width: 100%;
 	border: 0px;
@@ -341,10 +307,11 @@ hr {
 
 .divider {
 	margin-bottom: 1%;
+	overflow: hidden;
 }
 
 #description {
-	font-size: 20px;
+	font-size: 18px;
 	pointer-events: all;
 }
 

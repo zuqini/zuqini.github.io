@@ -19,7 +19,6 @@ function loadPortrait() {
 }
 
 $( document ).ready(function() {
-	//console-box variables
 	var code = "(function run() {" + '\n' + "        while (!(succeed = try());" + '\n' + "}());";
 	var codeIndex = 0;
 	var codeToType;
@@ -69,7 +68,7 @@ $( document ).ready(function() {
 
 	var description = ["<p>Hi there, thanks for visiting my site! :)<br><br>",
 							"I am a Software Engineering student at University of Waterloo.<br><br>",
-							"I am passionate about developing software applications for <span style='color:#ba7700; font-size:25px'>web</span> and <span style='color:#ba7700; font-size:25px'>mobile</span> platforms with <span style='color:#ba7700; font-size:25px'>elegant</span> design and <span style='color:#ba7700; font-size:25px'>scalable</span> code.<br><br>"];
+							"I am passionate about developing software applications for <span style='color:#ba7700; font-size:22px'>web</span> and <span style='color:#ba7700; font-size:22px'>mobile</span> platforms with <span style='color:#ba7700; font-size:22px'>elegant</span> design and <span style='color:#ba7700; font-size:22px'>scalable</span> code.<br><br>"];
 	var isTag;
 	var characterIndex = 0;
 	var descriptionIndex = 0;
@@ -107,4 +106,13 @@ $( document ).ready(function() {
 			typeDescription();
 		}
 	);
+
+	//chrome
+	$('.fadeInUp-container').show();
+	$('.fadeInUp-container').addClass('animated fadeInUp');
+	$('.trans-grow').addClass('grow');
+	$('.background-view').addClass('background-show');
+	$(window).scrollTop($(window).scrollTop());
+	typeCode();
+	typeDescription();
 });
