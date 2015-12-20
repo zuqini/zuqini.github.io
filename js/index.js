@@ -96,18 +96,9 @@ $( document ).ready(function() {
 	new Vivus('welcome-svg', {
 			file: 'resources/zuqi.svg',
 			type: 'oneByOne'
-		}, function(vivus) {
-			$('.fadeInUp-container').show();
-			$('.fadeInUp-container').addClass('animated fadeInUp');
-			$('.trans-grow').addClass('grow');
-			$('.background-view').addClass('background-show');
-			$(window).scrollTop($(window).scrollTop());
-			typeCode();
-			typeDescription();
-		}
+		}, function(vivus) {}
 	);
 
-	//chrome
 	$('.fadeInUp-container').show();
 	$('.fadeInUp-container').addClass('animated fadeInUp');
 	$('.trans-grow').addClass('grow');
