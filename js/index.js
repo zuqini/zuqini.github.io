@@ -1,7 +1,8 @@
 $( document ).ready(function() {
 	new Vivus('welcome-svg', {
 			file: 'resources/zuqi.svg',
-			type: 'oneByOne'
+			type: 'oneByOne',
+			duration: 100
 		}, function(vivus) {
 			$('.intro').show();
 			$('.fadeInUp-container').show();
