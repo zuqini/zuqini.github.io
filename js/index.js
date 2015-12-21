@@ -2,7 +2,7 @@ $( document ).ready(function() {
 	new Vivus('welcome-svg', {
 			file: 'resources/zuqi.svg',
 			type: 'oneByOne',
-			duration: 100
+			duration: 80
 		}, function(vivus) {
 			$('.intro').show();
 			$('.fadeInUp-container').show();
