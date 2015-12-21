@@ -39,3 +39,22 @@
 .project-tech {
 	color: #ba7700;
 }
+
+@media screen and (max-width: 479px) {
+	.project {
+		width: 250px;
+		height: 249px;
+	}
+
+	.project-img {
+		height: 169px;
+		overflow: hidden;
+	}
+	.project-desc {
+		font-size: 12px;
+	}
+
+	.project-name {
+		font-size: 18px;
+	}
+}
