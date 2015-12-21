@@ -5,7 +5,7 @@
 .project {
 	width: 400px;
 	height: 350px;
-	margin: 10px auto;
+	margin: 20px auto;
 	position: relative;
 }
 
@@ -30,4 +30,12 @@
 
 .project-desc {
 	height: 80px;
+}
+
+.project-name {
+	font-size: 25px;
+}
+
+.project-tech {
+	color: #ba7700;
 }
