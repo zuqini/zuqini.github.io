@@ -123,18 +123,6 @@ button {
 	font-size: 16px;
 }
 
-#console-window {
-	position: absolute;
-	color: #fff;
-	right: 0px;
-	background-color: rgba(26,26,26,0);
-	border-color: transparent;
-	padding: 0px 10px;
-	font-size: 25px;
-	resize: none;
-}
-
-
 @media screen and (max-width: 767px) {
 	.image-links>li>a>img {
 		height:25px;
@@ -151,18 +139,8 @@ button {
 		margin-bottom: 8px;
 	}
 
-	#console-window {
-		font-size: 15px;
-	}	
-
 	.svg-container {
 		width: 155px;
-	}
-}
-
-@media screen and (max-width: 479px) {
-	#console-window {
-		display: none;
 	}
 }
 
@@ -181,10 +159,6 @@ button {
 	.svg-container {
 		width: 150px;
 	}
-
-	#console-window {
-		font-size: 15px;
-	}
 }
 
 
@@ -198,10 +172,6 @@ button {
 	}
 
 	.svg-container {
-		display: none;
-	}
-
-	#console-window {
 		display: none;
 	}
 }
@@ -251,6 +221,7 @@ hr {
 .trans-grow {
     -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
     transition: width 1s  ease-out;
+    border-color: #222;
     width : 0%;
 }
 
@@ -310,8 +281,9 @@ hr {
 	overflow: hidden;
 }
 
-#description {
-	font-size: 18px;
+.intro {
+	display: none;
+	font-size: 20px;
 	pointer-events: all;
 }
 
