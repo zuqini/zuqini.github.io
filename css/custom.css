@@ -286,8 +286,7 @@ hr {
 }
 
 .intro {
-	display: none;
-	font-size: 20px;
+	font-size: 18px;
 	pointer-events: all;
 }
 
@@ -299,4 +298,9 @@ hr {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+}
+
+.emphasis {
+	color:#ba7700;
+	font-size:25px;
 }
