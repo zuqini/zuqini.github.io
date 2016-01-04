@@ -166,16 +166,12 @@ button {
 }
 
 
-@media screen and (max-height: 370px) {
+@media screen and (max-height: 277px) {
 	.image-links>li>a>img {
 		display: none;
 	}
 
 	#sub-title {
-		display: none;
-	}
-
-	.svg-container {
 		display: none;
 	}
 }
