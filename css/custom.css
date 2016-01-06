@@ -123,7 +123,10 @@ button {
 }
 
 .carousel-caption {
-	bottom: 30px;
+	bottom: 25px;
+}
+
+.carousel-caption span, .carousel-caption a {
 	font-size: 16px;
 }
 
@@ -134,6 +137,10 @@ button {
 	}
 
 	.carousel-caption {
+		bottom: 20px;
+	}
+
+	.carousel-caption span, .carousel-caption a {
 	    font-size: 12px;
 	}
 
@@ -154,24 +161,28 @@ button {
 		width:25px;
 	}
 
+	.carousel-caption {
+		bottom: 20px;
+	}
+
+	.carousel-caption span, .carousel-caption a {
+	    font-size: 12px;
+	}
+
 	#sub-title {
-		font-size: 10px;
+		font-size: 13px;
 		padding-left: 0px;
 		margin-bottom: 8px;
 	}
 
 	.svg-container {
-		width: 150px;
+		width: 155px;
 	}
 }
 
 
-@media screen and (max-height: 277px) {
-	.image-links>li>a>img {
-		display: none;
-	}
-
-	#sub-title {
+@media screen and (max-height: 379px) {
+	.carousel-caption {
 		display: none;
 	}
 }
@@ -196,11 +207,6 @@ button {
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-}
-
-.carousel-caption span {
-	border-radius: 5px;
-	padding: 4px 8px;
 }
 
 .fadeInUp-container {
@@ -244,6 +250,7 @@ hr {
 
 .overlay {
 	background-color: rgba(26,26,26,0.5);
+	overflow: hidden;
 	height: 75%;
 	width: 100%;
 	border: 0px;
