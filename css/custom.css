@@ -1,3 +1,8 @@
+svg {
+  position:absolute;
+  left:-999px;
+}
+
 html, body {
 	background-color: #222;
 	-webkit-background-size: cover;
@@ -192,11 +197,13 @@ button {
 }
 
 .carousel-inner .blur {
-	-webkit-filter: blur(8px);
-}
-
-.carousel-inner .slight-blur {
-	-webkit-filter: blur(4px);
+	-webkit-filter: blur(6px);
+	-moz-filter: blur(6px);
+	-ms-filter: blur(6px);
+	-o-filter: blur(6px);
+	filter: blur(6px);
+	filter: url(blur.svg#blur);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='6');
 }
 
 #carousel-main {
