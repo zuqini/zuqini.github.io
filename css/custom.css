@@ -191,6 +191,14 @@ button {
     height: 100%;
 }
 
+.carousel-inner .blur {
+	-webkit-filter: blur(8px);
+}
+
+.carousel-inner .slight-blur {
+	-webkit-filter: blur(4px);
+}
+
 #carousel-main {
 	height: 100%;
 }
