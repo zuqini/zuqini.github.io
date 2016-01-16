@@ -59,6 +59,12 @@ nav a:hover, nav a:focus {
 	border-bottom: 3px;
 	border-color: #3f3f3f;
 	border-style: solid;
+	-webkit-transition: transform 0.4s ease 0s;
+	transition: transform 0.4s ease 0s;
+}
+
+.scroll-up {
+	transform: translateY(-100%);
 }
 
 .navbar-nav {
@@ -261,6 +267,10 @@ hr {
 	pointer-events: none;
 	height: 100%;
 	width: 100%;
+}
+
+.no-overflow {
+	overflow: hidden;
 }
 
 .overlay {
