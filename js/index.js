@@ -8,7 +8,6 @@ $( document ).ready(function() {
 	$('.IAmP').addClass('animated fadeIn');
 
 	new Vivus('welcome-svg', {
-			file: 'resources/zuqi.svg',
 			type: 'oneByOne',
 			duration: 80
 		}, function(vivus) {
