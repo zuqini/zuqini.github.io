@@ -295,6 +295,7 @@ hr {
 }
 
 .foreground-view {
+	overflow-x: hidden;
 	position: absolute;
 	pointer-events: none;
 	height: 100%;
