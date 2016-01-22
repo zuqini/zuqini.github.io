@@ -8,10 +8,8 @@ $(function(){
        
        if (st > lastScrollTop){
            $('.navbar').addClass('scroll-up');
-           console.log('scroll down');
        } else {
           $('.navbar').removeClass('scroll-up');
-          console.log('scroll up');
        }
        lastScrollTop = st;
     });

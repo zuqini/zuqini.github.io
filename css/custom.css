@@ -42,6 +42,7 @@ html, body {
 	height: auto;
 	width: 100%;
 	border: 0px;
+	background-color: #222;
 }
 
 .background-show{
@@ -297,7 +298,6 @@ hr {
 .foreground-view {
 	overflow-x: hidden;
 	position: absolute;
-	pointer-events: none;
 	height: 100%;
 	width: 100%;
 }
@@ -328,23 +328,6 @@ hr {
 	overflow: hidden;
 }
 
-#console {
-	font-size: 18px;
-	pointer-events: all;
-	margin-top: 5px;
-}
-
-#console::before {
-	content: "> ";
-	font-size: 25px;
-}
-
-#console::after {
-	content: "_";
-	font-weight: bolder;
-	animation: blinker 1.2s infinite ease;
-}
-
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -358,6 +341,54 @@ hr {
 .emphasis {
 	color:#ba7700;
 	font-size:25px;
+}
+
+#goose {
+	width: 505px;
+	background: transparent;
+	border: none;
+	color: #FF1493;
+	margin: 0 auto;
+	position: relative;
+	font-size: 14px;
+}
+
+@media all and (max-width:700px) {
+  #goose {
+    font-size:10px;
+    width: 400px;
+  }
+}
+@media all and (max-width:400px) {
+  #goose {
+    font-size:7px;
+    width: 300px;
+  }
+}
+
+.easter-egg {
+	font-size: 18px;
+	text-align: center;
+	color: #ba7700;
+}
+
+#console {
+	font-size: 18px;
+	pointer-events: all;
+	margin-top: 5px;
+	margin-bottom: 60px;
+}
+
+#console::before {
+	content: "> ";
+	font-size: 25px;
+}
+
+#console::after {
+	content: "_";
+	font-weight: bold;
+	font-size: 25px;
+	animation: blinker 1.2s infinite ease;
 }
 
 @-webkit-keyframes blinker {

@@ -1,21 +1,45 @@
 var charToType = "I am a<span class='emphasis'> developer</span>, a<span class='emphasis'> designer</span>, and a<span class='emphasis'> musician</span>";
+var hint = ". Scroll down a little bit";
+var quit = false;
 var isTag;
 var characterIndex = 0;
 var typedChar = "";
-function consoleType() {
+function typeChar() {
 	typedChar = charToType.slice(0, ++characterIndex);
-	if (typedChar === charToType) {
-		return;
-	}
 	$('#console').html(typedChar);
 	var char = typedChar.slice(-1);
 	if( char === '<' ) isTag = true;
 	if( char === '>' ) isTag = false;
 	if (isTag) return consoleType();
 	setTimeout(consoleType, 50);
+}
+function consoleType() {
+	if (typedChar === charToType) {
+		if(quit) {
+			return;
+		}
+		charToType = charToType + hint;
+		quit = true;
+		setTimeout(typeChar, 1000);
+	} else {
+		typeChar();
 	}
+}
+
+$(function(){
+	$('.foreground-view').scroll(function(event){
+		var st = -$(this).scrollTop()*0.5;
+		$('.background-view').css({
+			"-webkit-transform": "translateY(" + st + "px)",
+			"-moz-transform": "translateY(" + st + "px)",
+			"-o-transform": "translateY(" + st + "px)",
+			"transform": "translateY(" + st + "px)"
+		});
+    });
+});
 
 $( document ).ready(function() {
+	$(this).scrollTop(0);
 	$('.fadeInUp-container').addClass('animated fadeInUp');
 	new Vivus('welcome-svg', {
 			type: 'oneByOne',
@@ -24,7 +48,6 @@ $( document ).ready(function() {
 			$('.trans-grow').addClass('grow');
 			$('.background-view').addClass('background-show');
 			$('.fadeInUp-container').show();
-			$(window).scrollTop($(window).scrollTop());
 			setTimeout(consoleType, 500);
 		}
 	);
