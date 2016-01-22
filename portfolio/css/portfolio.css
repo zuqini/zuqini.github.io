@@ -1,17 +1,18 @@
 .foreground-view {
+	overflow-x: hidden;
 	pointer-events: auto;
 }
 
 .project {
-	width: 400px;
-	height: 350px;
+	width: 435px;
+	height: 340px;
 	margin: 20px auto;
 	position: relative;
 	display: none;
 }
 
 .project-img {
-	height: 270px;
+	height: 255px;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -44,12 +45,11 @@
 
 @media screen and (max-width: 479px) {
 	.project {
-		width: 250px;
-		height: 249px;
+		width: 280px;
+		height: 245px;
 	}
-
 	.project-img {
-		height: 169px;
+		height: 165px;
 		overflow: hidden;
 	}
 	.project-desc {

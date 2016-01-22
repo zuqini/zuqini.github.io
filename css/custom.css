@@ -232,6 +232,16 @@ button {
 	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='8');
 }
 
+.carousel-inner .light-blur {
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-ms-filter: blur(4px);
+	-o-filter: blur(4px);
+	filter: blur(4px);
+	filter: url(blur.svg#light-blur);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+}
+
 #carousel-main {
 	height: 100%;
 }

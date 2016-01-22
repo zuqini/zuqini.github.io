@@ -2,4 +2,7 @@
 	<filter id="blur">
 		<feGaussianBlur stdDeviation="8" />
 	</filter>
+	<filter id="light-blur">
+		<feGaussianBlur stdDeviation="4" />
+	</filter>
 </svg>
