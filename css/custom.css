@@ -18,12 +18,30 @@ html, body {
 	position: absolute;
 	background-color: #1a1a1a;
 	opacity: 0;
-	height: 75%;
+	height: calc(100% - 60px);
 	width: 100%;
 	-webkit-transition: opacity 2s ease-out;
 	-moz-transition: opacity 2s ease-out;
 	-o-transition: opacity 2s ease-out;
     transition: opacity 2s  ease-out;
+}
+
+.overlay {
+	background-color: rgba(26,26,26,0.5);
+	overflow: hidden;
+	height: calc(100% - 60px);
+	width: 100%;
+	border: 0px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.post-overlay {
+	height: auto;
+	width: 100%;
+	border: 0px;
 }
 
 .background-show{
@@ -60,6 +78,8 @@ nav a:hover, nav a:focus {
 	border-color: #3f3f3f;
 	border-style: solid;
 	-webkit-transition: transform 0.4s ease 0s;
+	-moz-transition: transform 0.4s ease 0s;
+	-o-transition: transform 0.4s ease 0s;
 	transition: transform 0.4s ease 0s;
 }
 
@@ -203,13 +223,13 @@ button {
 }
 
 .carousel-inner .blur {
-	-webkit-filter: blur(6px);
-	-moz-filter: blur(6px);
-	-ms-filter: blur(6px);
-	-o-filter: blur(6px);
-	filter: blur(6px);
+	-webkit-filter: blur(8px);
+	-moz-filter: blur(8px);
+	-ms-filter: blur(8px);
+	-o-filter: blur(8px);
+	filter: blur(8px);
 	filter: url(blur.svg#blur);
-	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='6');
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='8');
 }
 
 #carousel-main {
@@ -246,7 +266,9 @@ hr {
 } 
 
 .trans-grow {
-    -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: width 1s ease-out;
+    -moz-transition: width 1s ease-out;
+	-o-transition: width 1s ease-out;
     transition: width 1s  ease-out;
     border-color: #222;
     width : 0%;
@@ -273,25 +295,6 @@ hr {
 	overflow: hidden;
 }
 
-.overlay {
-	background-color: rgba(26,26,26,0.5);
-	overflow: hidden;
-	height: 75%;
-	width: 100%;
-	border: 0px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-.post-overlay {
-	min-height: 25%;
-	height: auto;
-	width: 100%;
-	border: 0px;
-}
-
 .title {
 	font-size: 40px;
 	letter-spacing: 0.5px;
@@ -300,7 +303,9 @@ hr {
 
 .hr-left {
 	margin-left: 0px;
-	-webkit-transition: width 2s ease-out; /* For Safari 3.1 to 6.0 */
+	-webkit-transition: width 2s ease-out;
+	-moz-transition: width 2s ease-out;
+	-o-transition: width 2s ease-out;
     transition: width 2s  ease-out;
 }
 
@@ -309,13 +314,24 @@ hr {
 }
 
 .divider {
-	margin-bottom: 1%;
 	overflow: hidden;
 }
 
-.intro {
+#console {
 	font-size: 18px;
 	pointer-events: all;
+	margin-top: 5px;
+}
+
+#console::before {
+	content: "> ";
+	font-size: 25px;
+}
+
+#console::after {
+	content: "_";
+	font-weight: bolder;
+	animation: blinker 1.2s infinite ease;
 }
 
 .unselectable {
@@ -331,4 +347,20 @@ hr {
 .emphasis {
 	color:#ba7700;
 	font-size:25px;
+}
+
+@-webkit-keyframes blinker {
+  100% { opacity: 0.0; }
+}
+
+@-moz-keyframes blinker {
+  100% { opacity: 0.0; }
+}
+
+@-o-keyframes blinker {
+  100% { opacity: 0.0; }
+}
+
+@keyframes blinker {
+  100% { opacity: 0.0; }
 }
