@@ -1,5 +1,5 @@
 var charToType = "I am a<span class='emphasis'> developer</span>, a<span class='emphasis'> designer</span>, and a<span class='emphasis'> musician</span>";
-var hint = ". Scroll down a little bit";
+var hint = ". ( ͡° ͜ʖ ͡°)";
 var quit = false;
 var isTag;
 var characterIndex = 0;
@@ -20,7 +20,7 @@ function consoleType() {
 		}
 		charToType = charToType + hint;
 		quit = true;
-		setTimeout(typeChar, 1000);
+		setTimeout(typeChar, 5000);
 	} else {
 		typeChar();
 	}

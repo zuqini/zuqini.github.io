@@ -154,12 +154,11 @@ button {
 	margin-bottom: 16px;
 }
 
-.carousel-caption {
-	bottom: 25px;
-}
-
 .carousel-caption span, .carousel-caption a {
 	font-size: 16px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	border-radius: 10px;
 }
 
 @media screen and (max-width: 479px) {
@@ -344,7 +343,7 @@ hr {
 }
 
 #goose {
-	width: 505px;
+	width: 555px;
 	background: transparent;
 	border: none;
 	color: #FF1493;
@@ -359,7 +358,7 @@ hr {
     width: 400px;
   }
 }
-@media all and (max-width:400px) {
+@media all and (max-width:420px) {
   #goose {
     font-size:7px;
     width: 300px;
