@@ -228,7 +228,6 @@ button {
 	-ms-filter: blur(8px);
 	-o-filter: blur(8px);
 	filter: blur(8px);
-	filter: url(blur.svg#blur);
 	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='8');
 }
 
