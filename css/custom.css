@@ -38,6 +38,10 @@ html, body {
 	background-size: cover;
 }
 
+.pointer-thru {
+	pointer-events: none;
+}
+
 .post-overlay {
 	height: auto;
 	width: 100%;
@@ -47,6 +51,11 @@ html, body {
 
 .background-show{
 	opacity: 1;
+}
+
+img:hover {
+	width:100%;
+	height:100%;
 }
 
 a {
@@ -294,7 +303,6 @@ hr {
 }
 
 .foreground-view {
-	pointer-events: none;
 	overflow-x: hidden;
 	position: absolute;
 	height: 100%;
