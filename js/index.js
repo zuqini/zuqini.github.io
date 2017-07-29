@@ -1,5 +1,5 @@
-var charToType = "I am a<span class='emphasis'> developer</span>, a<span class='emphasis'> designer</span>, and a<span class='emphasis'> musician</span>";
-var hint = ". ( ͡° ͜ʖ ͡°)";
+var charToType = "console.log( 'I am a<span class='emphasis'> developer</span>, a<span class='emphasis'> designer</span>, and a<span class='emphasis'> musician</span>' );";
+var hint = "        return;";
 var quit = false;
 var isTag;
 var characterIndex = 0;

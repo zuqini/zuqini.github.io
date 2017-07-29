@@ -18,7 +18,7 @@ html, body {
 	position: absolute;
 	background-color: #1a1a1a;
 	opacity: 0;
-	height: calc(100% - 60px);
+	height: calc(100% - 50px);
 	width: 100%;
 	-webkit-transition: opacity 2s ease-out;
 	-moz-transition: opacity 2s ease-out;
@@ -29,7 +29,7 @@ html, body {
 .overlay {
 	background-color: rgba(26,26,26,0.5);
 	overflow: hidden;
-	height: calc(100% - 60px);
+	height: calc(100% - 50px);
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -294,6 +294,7 @@ hr {
 }
 
 .foreground-view {
+	pointer-events: none;
 	overflow-x: hidden;
 	position: absolute;
 	height: 100%;
@@ -374,12 +375,12 @@ hr {
 	font-size: 18px;
 	pointer-events: all;
 	margin-top: 5px;
-	margin-bottom: 60px;
+	white-space:pre;
 }
 
 #console::before {
-	content: "> ";
-	font-size: 25px;
+	content: "$ ";
+	margin-right: 5px;
 }
 
 #console::after {
