@@ -18,7 +18,7 @@ html, body {
 	position: absolute;
 	background-color: #1a1a1a;
 	opacity: 0;
-	height: calc(100% - 50px);
+	height: calc(100% - 45px);
 	width: 100%;
 	-webkit-transition: opacity 2s ease-out;
 	-moz-transition: opacity 2s ease-out;
@@ -29,7 +29,7 @@ html, body {
 .overlay {
 	background-color: rgba(26,26,26,0.5);
 	overflow: hidden;
-	height: calc(100% - 50px);
+	height: calc(100% - 45px);
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -381,7 +381,6 @@ hr {
 #console {
 	font-size: 18px;
 	pointer-events: all;
-	margin-top: 5px;
 	white-space:pre;
 }
 
