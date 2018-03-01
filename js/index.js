@@ -4,6 +4,7 @@ var quit = false;
 var isTag;
 var characterIndex = 0;
 var typedChar = "";
+
 function typeChar() {
 	typedChar = charToType.slice(0, ++characterIndex);
 	$('#console').html(typedChar);
@@ -13,6 +14,7 @@ function typeChar() {
 	if (isTag) return consoleType();
 	setTimeout(consoleType, 50);
 }
+
 function consoleType() {
 	if (typedChar === charToType) {
 		if(quit) {
@@ -27,25 +29,24 @@ function consoleType() {
 }
 
 $(function(){
-	$('.foreground-view').scroll(function(event){
-		var st = -$(this).scrollTop()*0.5;
-		$('.background-view').css({
-			"-webkit-transform": "translateY(" + st + "px)",
-			"-moz-transform": "translateY(" + st + "px)",
-			"-o-transform": "translateY(" + st + "px)",
-			"transform": "translateY(" + st + "px)"
-		});
-    });
-});
+	// Parallax scrolling, currently unused
+	// $('.foreground-view').scroll(function(event){
+	// 	var st = -$(this).scrollTop()*0.5;
+	// 	$('.background-view').css({
+	// 		"-webkit-transform": "translateY(" + st + "px)",
+	// 		"-moz-transform": "translateY(" + st + "px)",
+	// 		"-o-transform": "translateY(" + st + "px)",
+	// 		"transform": "translateY(" + st + "px)"
+	// 	});
+	// });
 
-$( document ).ready(function() {
-	$(this).scrollTop(0);
+    $(this).scrollTop(0);
 	$('.fadeInUp-container').addClass('animated fadeInUp');
+	$('.svg-container').addClass('show-svg');
 	new Vivus('welcome-svg', {
 			type: 'oneByOne',
 			duration: 80
 		}, function(vivus) {
-			$('.trans-grow').addClass('grow');
 			$('.background-view').addClass('background-show');
 			$('.fadeInUp-container').show();
 			setTimeout(consoleType, 500);

@@ -18,7 +18,7 @@ html, body {
 	position: absolute;
 	background-color: #1a1a1a;
 	opacity: 0;
-	height: calc(100% - 45px);
+	height: calc(100% - 42px);
 	width: 100%;
 	-webkit-transition: opacity 2s ease-out;
 	-moz-transition: opacity 2s ease-out;
@@ -29,7 +29,7 @@ html, body {
 .overlay {
 	background-color: rgba(26,26,26,0.5);
 	overflow: hidden;
-	height: calc(100% - 45px);
+	height: calc(100% - 42px);
 	width: 100%;
 	border: 0px;
 	-webkit-background-size: cover;
@@ -43,10 +43,14 @@ html, body {
 }
 
 .post-overlay {
-	height: auto;
+	height: 42px;
 	width: 100%;
 	border: 0px;
 	background-color: #222;
+	padding-top: 2px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
 }
 
 .background-show{
@@ -83,13 +87,14 @@ nav a:hover, nav a:focus {
 	width: 100%;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	border-bottom: 3px;
-	border-color: #3f3f3f;
-	border-style: solid;
+	border-bottom: 0px;
 	-webkit-transition: transform 0.4s ease 0s;
 	-moz-transition: transform 0.4s ease 0s;
 	-o-transition: transform 0.4s ease 0s;
 	transition: transform 0.4s ease 0s;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
 }
 
 .scroll-up {
@@ -135,6 +140,11 @@ button {
 
 .svg-container {
 	width: 250px;
+	visibility: hidden;
+}
+
+.show-svg {
+	visibility: visible;
 }
 
 .image-links {
@@ -347,29 +357,6 @@ hr {
 .emphasis {
 	color:#ba7700;
 	font-size:25px;
-}
-
-#goose {
-	width: 555px;
-	background: transparent;
-	border: none;
-	color: #FF1493;
-	margin: 0 auto;
-	position: relative;
-	font-size: 14px;
-}
-
-@media all and (max-width:700px) {
-  #goose {
-    font-size:10px;
-    width: 400px;
-  }
-}
-@media all and (max-width:420px) {
-  #goose {
-    font-size:7px;
-    width: 300px;
-  }
 }
 
 .easter-egg {
