@@ -46,7 +46,7 @@ $(function(){
 	new Vivus('welcome-svg', {
 			type: 'oneByOne',
 			duration: 80
-		}, function(vivus) {
+		},function(vivus) {
 			$('.background-view').addClass('background-show');
 			$('.fadeInUp-container').show();
 			setTimeout(consoleType, 500);
