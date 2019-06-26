@@ -139,7 +139,7 @@ button {
 }
 
 .svg-container {
-	width: 400px;
+	width: 450px;
 	visibility: hidden;
 }
 
@@ -200,7 +200,7 @@ button {
 	}
 
 	.svg-container {
-		width: 155px;
+		width: 250px;
 	}
 }
 
@@ -225,7 +225,7 @@ button {
 	}
 
 	.svg-container {
-		width: 155px;
+		width: 250px;
 	}
 }
 
