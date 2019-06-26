@@ -44,8 +44,9 @@ $(function(){
 	$('.fadeInUp-container').addClass('animated fadeInUp');
 	$('.svg-container').addClass('show-svg');
 	new Vivus('welcome-svg', {
-			type: 'oneByOne',
-			duration: 80
+			type: 'delayed',
+			duration: 80,
+			animTimingFunction: Vivus.EASE
 		},function(vivus) {
 			$('.background-view').addClass('background-show');
 			$('.fadeInUp-container').show();
