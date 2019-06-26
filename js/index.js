@@ -43,14 +43,12 @@ $(function(){
     $(this).scrollTop(0);
 	$('.fadeInUp-container').addClass('animated fadeInUp');
 	$('.svg-container').addClass('show-svg');
+	$('.background-view').addClass('background-show');
+	$('.fadeInUp-container').show();
+	setTimeout(consoleType, 500);
 	new Vivus('welcome-svg', {
-			type: 'delayed',
-			duration: 80,
-			animTimingFunction: Vivus.EASE
-		},function(vivus) {
-			$('.background-view').addClass('background-show');
-			$('.fadeInUp-container').show();
-			setTimeout(consoleType, 500);
-		}
-	);
+		type: 'delayed',
+		duration: 120,
+		animTimingFunction: Vivus.EASE
+	});
 });
